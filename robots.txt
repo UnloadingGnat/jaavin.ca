@@ -1,0 +1,4 @@
+Sitemap: https://jaavin.ca/sitemap.xml
+
+User-agent: *
+Disallow: /api
