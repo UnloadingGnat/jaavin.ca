@@ -3,15 +3,17 @@ import { Suspense } from "react";
 import Image from "next/image";
 
 export default function MotionHeader(props: { value: MotionValue<number> }) {
+  const useTransformY = (value: MotionValue<number>) => {
+    return useTransform(value, [0, 9000], [0, 9000], {
+      clamp: false,
+    });
+  };
+
   return (
     <>
       <motion.div
-        className="relative w-screen"
-        style={{
-          y: useTransform(props.value, [0, 9000], [0, 9000], {
-            clamp: false,
-          }),
-        }}
+        className="relative w-screen transition-all duration-[20ms] ease-linear"
+        style={{ y: useTransformY(props.value) }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}

@@ -1,5 +1,6 @@
-import PageScroll from "@/components/PageScroll";
+import dynamic from "next/dynamic";
 
+const DynamicPageScroll = dynamic(() => import("@/components/PageScroll"));
 export default function Home() {
-  return <PageScroll />;
+  return <DynamicPageScroll />;
 }

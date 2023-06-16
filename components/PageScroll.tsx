@@ -13,6 +13,7 @@ export default function PageScroll() {
         <Navbar />
         <MotionHeader value={scrollY} />
         <Content />
+        <Navbar footer={true} />
       </div>
     </>
   );
