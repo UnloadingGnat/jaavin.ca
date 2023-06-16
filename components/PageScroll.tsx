@@ -1,16 +1,19 @@
 "use client";
 
-
-import {useScroll} from "framer-motion";
-import Link from "next/link";
-import {IconBrandGithub, IconBrandLinkedin, IconFileCv} from "@tabler/icons-react";
+import { useScroll } from "framer-motion";
 import Navbar from "@/components/home/Navbar";
+import MotionHeader from "@/components/home/MotionHeader";
+import Content from "@/components/content/Content";
 
 export default function PageScroll() {
-  const { scrollY} = useScroll()
+  const { scrollY } = useScroll();
   return (
     <>
-      <Navbar />
+      <div className="min-h-screen">
+        <Navbar />
+        <MotionHeader value={scrollY} />
+        <Content />
+      </div>
     </>
   );
 }

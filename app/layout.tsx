@@ -5,12 +5,12 @@ import React from "react";
 export const metadata = {
   title: "Jaavin - Software Developer",
   description:
-    "jaavin",
+    "I am a multi-disciplinary software developer who enjoys crafting intuitive interfaces. Driven by the desire to solve complex engineering problems.",
   twitter: {
     card: "summary_large_image",
-    title: "jaavin",
+    title: "Jaavin - Software Developer",
     description:
-      "jaavin.",
+      "I am a multi-disciplinary software developer who enjoys crafting intuitive interfaces. Driven by the desire to solve complex engineering problems..",
   },
   metadataBase: new URL("https://jaavin.ca"),
   themeColor: "#FFF",

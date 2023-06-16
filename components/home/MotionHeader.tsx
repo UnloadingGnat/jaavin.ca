@@ -1,0 +1,40 @@
+import { anticipate, motion, MotionValue, useTransform } from "framer-motion";
+import { Suspense } from "react";
+import Image from "next/image";
+
+export default function MotionHeader(props: { value: MotionValue<number> }) {
+  return (
+    <>
+      <motion.div
+        className="relative w-screen"
+        style={{
+          y: useTransform(props.value, [0, 9000], [0, 9000], {
+            clamp: false,
+          }),
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Suspense fallback={null}>
+          <div className="relative">
+            <div className="absolute inset-2 animate-gradient opacity-100"></div>
+            <div className="relative">
+              <div>
+                <Image
+                  src="/motionheader.svg"
+                  alt="I Build Cool Things"
+                  width={500}
+                  height={500}
+                  priority={true}
+                  className="w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </Suspense>
+      </motion.div>
+      ;
+    </>
+  );
+}
