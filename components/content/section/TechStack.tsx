@@ -1,5 +1,5 @@
-import {IconChevronLeft, IconChevronRight} from "@tabler/icons-react";
-import {useRef} from "react";
+import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
+import { useRef } from "react";
 
 function SkillCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -8,62 +8,58 @@ function SkillCarousel() {
     if (carouselRef.current) {
       carouselRef.current.scrollLeft -= 200;
     }
-  }
+  };
 
   const scrollRight = () => {
     if (carouselRef.current) {
       carouselRef.current.scrollLeft += 200;
     }
-  }
+  };
 
   return (
     <>
       <div className="flex">
         <button className="text-gray-500 mt-3 lg:hidden" onClick={scrollLeft}>
-          <IconChevronLeft stroke={2} size={25}/>
+          <IconChevronLeft stroke={2} size={25} />
         </button>
         <div
           ref={carouselRef}
-          className="flex overflow-x-scroll scrollbar-hide snap-x snap-mandatory scroll-smooth border-x-2 mt-2 border-opacity-60 border-gray-700 lg:border-hidden ">
-          <button
-            className="mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl">
+          className="flex overflow-x-scroll scrollbar-hide snap-x snap-mandatory scroll-smooth border-x-2 mt-2 border-opacity-60 border-gray-700 lg:border-hidden "
+        >
+          <button className="mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl">
             Frontend Dev
           </button>
           <p className="mt-2 text-lg mx-2 tracking-tight text-[#999] sm:text-3xl">
             /
           </p>
-          <button
-            className="mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ">
+          <button className="mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ">
             Backend Dev
           </button>
           <p className="mt-2 text-lg mx-2 tracking-tight text-[#999] sm:text-3xl">
             /
           </p>
-          <button
-            className="mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl">
+          <button className="mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl">
             Cloud Ops
           </button>
           <p className="mt-2 text-lg mx-2 tracking-tight text-[#999] sm:text-3xl">
             /
           </p>
-          <button
-            className="mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl">
+          <button className="mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl">
             Database
           </button>
           <p className="mt-2 text-lg mx-2 tracking-tight text-[#999] sm:text-3xl">
             /
           </p>
-          <button
-            className="mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl">
+          <button className="mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl">
             System Design
           </button>
         </div>
         <button className="text-gray-500 mt-3 lg:hidden" onClick={scrollRight}>
-          <IconChevronRight stroke={2} size={25}/>
+          <IconChevronRight stroke={2} size={25} />
         </button>
       </div>
     </>
-    )
+  );
 }
 
 export default function TechStack() {
@@ -75,7 +71,7 @@ export default function TechStack() {
             <h2 className="mt-2 text-2xl lg:text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Skills
             </h2>
-            <SkillCarousel/>
+            <SkillCarousel />
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
   return (
     <>
       <motion.div
-        className="relative w-screen transition-all duration-[20ms] ease-linear"
+        className="relative w-screen"
         style={{ y: useTransformY(props.value) }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
