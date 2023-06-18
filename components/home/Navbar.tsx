@@ -30,16 +30,31 @@ export default function Navbar(props: { footer?: boolean }) {
           )}
         </div>
         <div className="flex justify-evenly gap-12 xl:gap-24 mr-16">
-          <a className="text-xl text-[#969696] hover:bg-[#969696] px-[2px] hover:no-underline hover:text-black font-mono cursor-pointer underline underline-offset-4 tracking-tight mt-2 mb-2 ml-2 lg:flex">
+          <a
+            href="https://www.google.com/"
+            className="text-xl text-[#969696] hover:bg-[#969696] px-[2px] hover:no-underline hover:text-black font-mono cursor-pointer underline underline-offset-4 tracking-tight mt-2 mb-2 ml-2 lg:flex"
+          >
             hi@jaavin.ca
           </a>
-          <a className="text-xl text-[#969696] font-mono cursor-pointer tracking-tight mt-2 mb-2 ml-2 hidden lg:flex">
+          <a
+            aria-label="LinkedIn"
+            href="https://www.google.com"
+            className="text-xl text-[#969696] font-mono cursor-pointer tracking-tight mt-2 mb-2 ml-2 hidden lg:flex"
+          >
             <IconBrandLinkedin size={32} />
           </a>
-          <a className="text-xl text-[#969696] font-mono cursor-pointer tracking-tight mt-2 mb-2 ml-2 hidden lg:flex">
+          <a
+            aria-label="Github"
+            href="https://www.google.com"
+            className="text-xl text-[#969696] font-mono cursor-pointer tracking-tight mt-2 mb-2 ml-2 hidden lg:flex"
+          >
             <IconBrandGithub size={32} />
           </a>
-          <a className="text-xl text-[#969696] font-mono cursor-pointer tracking-tight mt-2 mb-2 ml-2 hidden md:flex">
+          <a
+            aria-label="Resume"
+            href="https://www.google.com/"
+            className="text-xl text-[#969696] font-mono cursor-pointer tracking-tight mt-2 mb-2 ml-2 hidden md:flex"
+          >
             <IconFileCv size={32} />
           </a>
         </div>
