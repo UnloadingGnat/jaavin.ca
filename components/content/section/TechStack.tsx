@@ -1,22 +1,14 @@
 import {
   IconBallpen,
-  IconBrandAzure,
   IconBrandFramerMotion,
-  IconBrandGraphql,
-  IconBrandNextjs,
-  IconBrandPython,
   IconBrandRadixUi,
-  IconBrandReact,
   IconBrandReactNative,
-  IconBrandTailwind,
-  IconBrandTypescript,
-  IconBrandVercel,
   IconBrandVite,
   IconChevronLeft,
   IconChevronRight,
   IconSourceCode,
 } from "@tabler/icons-react";
-import { useRef, useState } from "react";
+import {useRef, useState} from "react";
 import {
   SiAmazonaws,
   SiCsharp,
@@ -27,26 +19,34 @@ import {
   SiFigma,
   SiFirebase,
   SiGooglecloud,
+  SiGraphql,
   SiJavascript,
+  SiMicrosoftazure,
   SiMicrosoftsqlserver,
   SiMongodb,
+  SiNextdotjs,
   SiNodedotjs,
   SiOpenjdk,
   SiPostgresql,
   SiPowerapps,
   SiPrisma,
+  SiPython,
+  SiReact,
   SiRedis,
   SiServerless,
   SiSketch,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
 } from "@icons-pack/react-simple-icons";
 
 const frontendSkills = [
-  { icon: <IconBrandTypescript stroke={2} size={25} />, label: "TypeScript" },
+  { icon: <SiTypescript stroke={2} size={25} />, label: "TypeScript" },
   { icon: <SiJavascript stroke={2} size={25} />, label: "JavaScript" },
-  { icon: <IconBrandTailwind stroke={2} size={25} />, label: "TailwindCSS" },
-  { icon: <IconBrandReact stroke={2} size={25} />, label: "ReactJS" },
-  { icon: <IconBrandNextjs stroke={2} size={25} />, label: "NextJS" },
-  { icon: <IconBrandGraphql stroke={2} size={25} />, label: "GraphQL" },
+  { icon: <SiTailwindcss stroke={2} size={25} />, label: "TailwindCSS" },
+  { icon: <SiReact stroke={2} size={25} />, label: "ReactJS" },
+  { icon: <SiNextdotjs stroke={2} size={25} />, label: "NextJS" },
+  { icon: <SiGraphql stroke={2} size={25} />, label: "GraphQL" },
   { icon: <IconBrandRadixUi stroke={2} size={25} />, label: "RadixUI" },
   {
     icon: <IconBrandReactNative stroke={2} size={25} />,
@@ -62,7 +62,7 @@ const frontendSkills = [
 ];
 
 const backendSkills = [
-  { icon: <IconBrandPython stroke={2} size={25} />, label: "Python" },
+  { icon: <SiPython stroke={2} size={25} />, label: "Python" },
   { icon: <SiOpenjdk stroke={2} size={25} />, label: "Java" },
   { icon: <SiCsharp stroke={2} size={25} />, label: "C#" },
   { icon: <SiDjango stroke={2} size={25} />, label: "Django" },
@@ -73,8 +73,8 @@ const backendSkills = [
 ];
 
 const cloudSkills = [
-  { icon: <IconBrandVercel stroke={2} size={25} />, label: "Vercel" },
-  { icon: <IconBrandAzure stroke={2} size={25} />, label: "Azure" },
+  { icon: <SiVercel stroke={2} size={25} />, label: "Vercel" },
+  { icon: <SiMicrosoftazure stroke={2} size={25} />, label: "Azure" },
   { icon: <SiAmazonaws stroke={2} size={25} />, label: "AWS" },
   { icon: <SiGooglecloud stroke={2} size={25} />, label: "Google Cloud" },
   { icon: <SiFirebase stroke={2} size={25} />, label: "Firebase" },
