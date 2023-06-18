@@ -137,7 +137,7 @@ function SkillCarousel() {
   return (
     <>
       <div className="flex">
-        <button className="text-gray-500 mt-3 lg:hidden" onClick={scrollLeft}>
+        <button aria-label="skill category left" className="text-gray-500 mt-3 mr-1 lg:hidden" onClick={scrollLeft}>
           <IconChevronLeft stroke={2} size={25} />
         </button>
         <div
@@ -197,7 +197,7 @@ function SkillCarousel() {
             System Design
           </button>
         </div>
-        <button className="text-gray-500 mt-3 lg:hidden" onClick={scrollRight}>
+        <button aria-label="Skill category right" className="text-gray-500 ml-1 mt-3 lg:hidden" onClick={scrollRight}>
           <IconChevronRight stroke={2} size={25} />
         </button>
       </div>
