@@ -1,4 +1,4 @@
-import { anticipate, motion, MotionValue, useTransform } from "framer-motion";
+import { motion, MotionValue, useTransform } from "framer-motion";
 import { Suspense } from "react";
 import Image from "next/image";
 

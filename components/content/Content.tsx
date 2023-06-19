@@ -1,5 +1,6 @@
 import Hero from "@/components/content/section/Hero";
 import TechStack from "@/components/content/section/TechStack";
+import LogoMarquee from "@/components/content/section/LogoMarquee";
 
 export default function Content() {
   return (
@@ -8,6 +9,7 @@ export default function Content() {
         <div className="min-h-screen flex flex-col gap-2">
           <Hero />
           <TechStack />
+          <LogoMarquee />
         </div>
       </div>
     </>

@@ -8,7 +8,7 @@ import {
   IconChevronRight,
   IconSourceCode,
 } from "@tabler/icons-react";
-import {useRef, useState} from "react";
+import { useRef, useState } from "react";
 import {
   SiAmazonaws,
   SiCsharp,
@@ -137,7 +137,11 @@ function SkillCarousel() {
   return (
     <>
       <div className="flex">
-        <button aria-label="skill category left" className="text-gray-500 mt-3 mr-1 lg:hidden" onClick={scrollLeft}>
+        <button
+          aria-label="skill category left"
+          className="text-gray-500 mt-3 mr-1 lg:hidden"
+          onClick={scrollLeft}
+        >
           <IconChevronLeft stroke={2} size={25} />
         </button>
         <div
@@ -146,40 +150,40 @@ function SkillCarousel() {
         >
           <button
             onClick={() => handleTabChange("frontend")}
-            className={`mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
+            className={`mt-2 text-lg snap-start snap-always whitespace-nowrap pl-2 lg:pl-0 hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
               activeTab === "frontend" ? "text-white hover:no-underline" : ""
             }`}
           >
             Frontend Dev
           </button>
-          <p className="mt-2 text-lg mx-2 tracking-tight text-[#999] sm:text-3xl">
+          <p className="mt-2 text-lg ml-2 tracking-tight text-[#999] sm:text-3xl">
             /
           </p>
           <button
             onClick={() => handleTabChange("backend")}
-            className={`mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
+            className={`mt-2 text-lg snap-start snap-always whitespace-nowrap pl-2 hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
               activeTab === "backend" ? "text-white hover:no-underline" : ""
             }`}
           >
             Backend Dev
           </button>
-          <p className="mt-2 text-lg mx-2 tracking-tight text-[#999] sm:text-3xl">
+          <p className="mt-2 text-lg ml-2 tracking-tight text-[#999] sm:text-3xl">
             /
           </p>
           <button
             onClick={() => handleTabChange("cloud")}
-            className={`mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
+            className={`mt-2 text-lg snap-start snap-always whitespace-nowrap pl-2 hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
               activeTab === "cloud" ? "text-white hover:no-underline" : ""
             }`}
           >
             Cloud Ops
           </button>
-          <p className="mt-2 text-lg mx-2 tracking-tight text-[#999] sm:text-3xl">
+          <p className="mt-2 text-lg ml-2 tracking-tight text-[#999] sm:text-3xl">
             /
           </p>
           <button
             onClick={() => handleTabChange("database")}
-            className={`mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
+            className={`mt-2 text-lg snap-start snap-always whitespace-nowrap pl-2 hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
               activeTab === "database" ? "text-white hover:no-underline" : ""
             }`}
           >
@@ -197,7 +201,11 @@ function SkillCarousel() {
             System Design
           </button>
         </div>
-        <button aria-label="Skill category right" className="text-gray-500 ml-1 mt-3 lg:hidden" onClick={scrollRight}>
+        <button
+          aria-label="Skill category right"
+          className="text-gray-500 ml-1 mt-3 lg:hidden"
+          onClick={scrollRight}
+        >
           <IconChevronRight stroke={2} size={25} />
         </button>
       </div>
