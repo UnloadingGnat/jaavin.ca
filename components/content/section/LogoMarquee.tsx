@@ -7,7 +7,7 @@ export default function LogoMarquee() {
   return (
     <>
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-3 rounded-3xl">
-        <Marquee pauseOnHover={pauseHover()} speed={110}>
+        <Marquee pauseOnHover={pauseHover()} speed={150}>
           <Image
             src="/Ipex-logo.svg"
             alt="I Build Cool Things"
@@ -16,56 +16,35 @@ export default function LogoMarquee() {
             className="w-full"
           />
           <Image
-            src="/Ipex-logo.svg"
+            src="/logo1325.svg"
             alt="I Build Cool Things"
             width={100}
             height={100}
             className="w-full"
           />
           <Image
-            src="/Ipex-logo.svg"
+            src="/maclogofinal.svg"
             alt="I Build Cool Things"
             width={100}
             height={100}
             className="w-full"
           />
           <Image
-            src="/Ipex-logo.svg"
+            src="/macrocket-logo.svg"
             alt="I Build Cool Things"
             width={100}
             height={100}
             className="w-full"
           />
           <Image
-            src="/Ipex-logo.svg"
+            src="/macblocklogo.svg"
             alt="I Build Cool Things"
             width={100}
             height={100}
             className="w-full"
           />
           <Image
-            src="/Ipex-logo.svg"
-            alt="I Build Cool Things"
-            width={100}
-            height={100}
-            className="w-full"
-          />
-          <Image
-            src="/Ipex-logo.svg"
-            alt="I Build Cool Things"
-            width={100}
-            height={100}
-            className="w-full"
-          />
-          <Image
-            src="/Ipex-logo.svg"
-            alt="I Build Cool Things"
-            width={100}
-            height={100}
-            className="w-full"
-          />
-          <Image
-            src="/Ipex-logo.svg"
+            src="/macailogo.svg"
             alt="I Build Cool Things"
             width={100}
             height={100}
