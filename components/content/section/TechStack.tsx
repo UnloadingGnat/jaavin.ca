@@ -1,9 +1,5 @@
-import {
-  IconBallpen,
-  IconChevronLeft,
-  IconChevronRight,
-} from "@tabler/icons-react";
-import { useRef, useState } from "react";
+import {IconBallpen, IconChevronLeft, IconChevronRight,} from "@tabler/icons-react";
+import {useRef, useState} from "react";
 import {
   SiAmazonaws,
   SiCsharp,
@@ -41,18 +37,6 @@ const frontendSkills = [
   { icon: <SiGraphql stroke={2} size={25} />, label: "GraphQL" },
 ];
 
-// { icon: <IconBrandRadixUi stroke={2} size={25} />, label: "RadixUI" },
-// {
-//   icon: <IconBrandReactNative stroke={2} size={25} />,
-//   label: "React Native",
-// },
-// { icon: <SiElectron stroke={2} size={25} />, label: "Electron" },
-// { icon: <IconBrandVite stroke={2} size={25} />, label: "Vite" },
-// { icon: <IconSourceCode stroke={2} size={25} />, label: "HTML/CSS" },
-// {
-//   icon: <IconBrandFramerMotion stroke={2} size={25} />,
-//   label: "Framer Motion",
-// },
 
 const backendSkills = [
   { icon: <SiPython stroke={2} size={25} />, label: "Python" },
@@ -62,9 +46,6 @@ const backendSkills = [
   { icon: <SiDotnet stroke={2} size={25} />, label: ".NET" },
   { icon: <SiNodedotjs stroke={2} size={25} />, label: "NodeJS" },
 ];
-
-// { icon: <SiExpress stroke={2} size={25} />, label: "ExpressJS" },
-// { icon: <SiServerless stroke={2} size={25} />, label: "Serverless" },
 
 const cloudSkills = [
   { icon: <SiVercel stroke={2} size={25} />, label: "Vercel" },
