@@ -1,6 +1,8 @@
 import Hero from "@/components/content/section/Hero";
-import TechStack from "@/components/content/section/TechStack";
 import LogoMarquee from "@/components/content/section/LogoMarquee";
+import dynamic from "next/dynamic";
+
+const DynamicTechStack = dynamic(() => import("@/components/content/section/TechStack"));
 
 export default function Content() {
   return (
@@ -8,7 +10,7 @@ export default function Content() {
       <div className="px-1 lg:px-2">
         <div className="min-h-screen flex flex-col gap-2">
           <Hero />
-          <TechStack />
+          <DynamicTechStack />
           <LogoMarquee />
         </div>
       </div>

@@ -11,7 +11,6 @@ export default function LogoMarquee() {
               alt="I Build Cool Things"
               width={100}
               height={100}
-              priority={true}
               className="w-full"
             />
             <Image
@@ -19,7 +18,6 @@ export default function LogoMarquee() {
               alt="I Build Cool Things"
               width={100}
               height={100}
-              priority={true}
               className="w-full"
             />
             <Image
@@ -27,7 +25,6 @@ export default function LogoMarquee() {
               alt="I Build Cool Things"
               width={100}
               height={100}
-              priority={true}
               className="w-full"
             />
             <Image
@@ -35,7 +32,6 @@ export default function LogoMarquee() {
               alt="I Build Cool Things"
               width={100}
               height={100}
-              priority={true}
               className="w-full"
             />{" "}
           </div>
@@ -46,7 +42,6 @@ export default function LogoMarquee() {
               alt="I Build Cool Things"
               width={100}
               height={100}
-              priority={true}
               className="w-full"
             />
             <Image
@@ -54,7 +49,6 @@ export default function LogoMarquee() {
               alt="I Build Cool Things"
               width={100}
               height={100}
-              priority={true}
               className="w-full"
             />
             <Image
@@ -62,7 +56,6 @@ export default function LogoMarquee() {
               alt="I Build Cool Things"
               width={100}
               height={100}
-              priority={true}
               className="w-full"
             />
             <Image
@@ -70,7 +63,6 @@ export default function LogoMarquee() {
               alt="I Build Cool Things"
               width={100}
               height={100}
-              priority={true}
               className="w-full"
             />
           </div>
