@@ -2,7 +2,9 @@ import Hero from "@/components/content/section/Hero";
 import LogoMarquee from "@/components/content/section/LogoMarquee";
 import dynamic from "next/dynamic";
 
-const DynamicTechStack = dynamic(() => import("@/components/content/section/TechStack"));
+const DynamicTechStack = dynamic(
+  () => import("@/components/content/section/TechStack")
+);
 
 export default function Content() {
   return (

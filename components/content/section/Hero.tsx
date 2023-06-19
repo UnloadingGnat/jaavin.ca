@@ -20,7 +20,7 @@ export default function Hero() {
               Currently building performant & high-assurance software at{" "}
               <a
                 href="https://ipexna.com/"
-                className="underline underline-offset-4 cursor-pointer hover:no-underline px-1 hover:bg-white hover:text-[#222329]"
+                className="underline underline-offset-4 cursor-pointer hover:no-underline lg:px-1 hover:bg-white hover:text-[#222329]"
               >
                 IPEX
               </a>
