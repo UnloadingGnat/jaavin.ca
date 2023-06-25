@@ -7,50 +7,52 @@ export default function LogoMarquee() {
   return (
     <>
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-3 rounded-3xl">
-        <Marquee pauseOnHover={pauseHover()} speed={150}>
-          <Image
-            src="/Ipex-logo.svg"
-            alt="I Build Cool Things"
-            width={100}
-            height={100}
-            className="w-full"
-          />
-          <Image
-            src="/logo1325.svg"
-            alt="I Build Cool Things"
-            width={100}
-            height={100}
-            className="w-full"
-          />
-          <Image
-            src="/maclogofinal.svg"
-            alt="I Build Cool Things"
-            width={100}
-            height={100}
-            className="w-full"
-          />
-          <Image
-            src="/macrocket-logo.svg"
-            alt="I Build Cool Things"
-            width={100}
-            height={100}
-            className="w-full"
-          />
-          <Image
-            src="/macblocklogo.svg"
-            alt="I Build Cool Things"
-            width={100}
-            height={100}
-            className="w-full"
-          />
-          <Image
-            src="/macailogo.svg"
-            alt="I Build Cool Things"
-            width={100}
-            height={100}
-            className="w-full"
-          />
-        </Marquee>
+        <div className="h-[100px]">
+          <Marquee pauseOnHover={pauseHover()} speed={150}>
+            <Image
+              src="/Ipex-logo.svg"
+              alt="I Build Cool Things"
+              width={100}
+              height={100}
+              className="w-full"
+            />
+            <Image
+              src="/logo1325.svg"
+              alt="I Build Cool Things"
+              width={100}
+              height={100}
+              className="w-full"
+            />
+            <Image
+              src="/maclogofinal.svg"
+              alt="I Build Cool Things"
+              width={100}
+              height={100}
+              className="w-full"
+            />
+            <Image
+              src="/macrocket-logo.svg"
+              alt="I Build Cool Things"
+              width={100}
+              height={100}
+              className="w-full"
+            />
+            <Image
+              src="/macblocklogo.svg"
+              alt="I Build Cool Things"
+              width={100}
+              height={100}
+              className="w-full"
+            />
+            <Image
+              src="/macailogo.svg"
+              alt="I Build Cool Things"
+              width={100}
+              height={100}
+              className="w-full"
+            />
+          </Marquee>
+        </div>
       </div>
     </>
   );
