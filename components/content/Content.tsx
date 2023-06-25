@@ -1,7 +1,7 @@
 import Hero from "@/components/content/section/Hero";
 import LogoMarquee from "@/components/content/section/LogoMarquee";
 import dynamic from "next/dynamic";
-import {Suspense} from "react";
+import { Suspense } from "react";
 
 const DynamicTechStack = dynamic(
   () => import("@/components/content/section/TechStack")
