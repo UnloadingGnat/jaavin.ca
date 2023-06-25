@@ -1,5 +1,9 @@
-import {IconBallpen, IconChevronLeft, IconChevronRight,} from "@tabler/icons-react";
-import {useRef, useState} from "react";
+import {
+  IconBallpen,
+  IconChevronLeft,
+  IconChevronRight,
+} from "@tabler/icons-react";
+import { useRef, useState } from "react";
 import {
   SiAmazonaws,
   SiCsharp,
@@ -13,6 +17,7 @@ import {
   SiMicrosoftazure,
   SiMicrosoftsqlserver,
   SiMongodb,
+  SiMysql,
   SiNextdotjs,
   SiNodedotjs,
   SiOpenjdk,
@@ -23,6 +28,7 @@ import {
   SiReact,
   SiRedis,
   SiSketch,
+  SiStorybook,
   SiTailwindcss,
   SiTypescript,
   SiVercel,
@@ -36,7 +42,6 @@ const frontendSkills = [
   { icon: <SiNextdotjs stroke={2} size={25} />, label: "NextJS" },
   { icon: <SiGraphql stroke={2} size={25} />, label: "GraphQL" },
 ];
-
 
 const backendSkills = [
   { icon: <SiPython stroke={2} size={25} />, label: "Python" },
@@ -63,12 +68,14 @@ const databaseSkills = [
   },
   { icon: <SiMongodb stroke={2} size={25} />, label: "MongoDB" },
   { icon: <SiRedis stroke={2} size={25} />, label: "Redis" },
+  { icon: <SiMysql stroke={2} size={25} />, label: "MySQL" },
   { icon: <SiPrisma stroke={2} size={25} />, label: "Prisma" },
 ];
 
 const systemSkills = [
   { icon: <SiSketch stroke={2} size={25} />, label: "Sketch" },
   { icon: <SiFigma stroke={2} size={25} />, label: "Figma" },
+  { icon: <SiStorybook stroke={2} size={25} />, label: "Storybook" },
   { icon: <IconBallpen stroke={2} size={25} />, label: "Excalidraw" },
   { icon: <SiPowerapps stroke={2} size={25} />, label: "Power Apps" },
 ];
