@@ -17,7 +17,7 @@ export default function Navbar(props: { footer?: boolean }) {
               Computer Engineering @{" "}
               <a
                 href="https://www.mcmaster.ca/"
-                className="hover:bg-[#969696] px-[2px] hover:no-underline hover:text-black cursor-pointer underline underline-offset-4 ml-2"
+                className="hover:bg-[#969696] px-[2px] hover:no-underline hover:text-black cursor-pointer underline underline-offset-8 ml-2"
               >
                 McMaster University
               </a>
@@ -31,7 +31,7 @@ export default function Navbar(props: { footer?: boolean }) {
         <div className="flex justify-evenly gap-12 xl:gap-24 mr-16">
           <a
             href="https://www.google.com/"
-            className="text-xl text-[#969696] hover:bg-[#969696] px-[2px] hover:no-underline hover:text-black font-mono cursor-pointer underline underline-offset-4 tracking-tight mt-2 mb-2 ml-2 lg:flex"
+            className="text-xl text-[#969696] hover:bg-[#969696] px-[2px] hover:no-underline hover:text-black font-mono cursor-pointer underline underline-offset-8 tracking-tight mt-2 mb-2 ml-2 lg:flex"
           >
             hi@jaavin.ca
           </a>
