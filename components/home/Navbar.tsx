@@ -30,29 +30,29 @@ export default function Navbar(props: { footer?: boolean }) {
         </div>
         <div className="flex justify-evenly gap-12 xl:gap-24 mr-16">
           <a
-            href="https://www.google.com/"
+            href="mailto:hi@jaavin.ca"
             className="text-xl text-[#969696] hover:bg-[#969696] px-[2px] hover:no-underline hover:text-black font-mono cursor-pointer underline underline-offset-8 tracking-tight mt-2 mb-2 ml-2 lg:flex"
           >
             hi@jaavin.ca
           </a>
           <a
             aria-label="LinkedIn"
-            href="https://www.google.com"
-            className="text-xl text-[#969696] font-mono cursor-pointer tracking-tight mt-2 mb-2 ml-2 hidden lg:flex"
+            href="https://www.linkedin.com/in/jaavin/"
+            className="text-xl text-[#969696] font-mono cursor-pointer hover:text-[#757575] tracking-tight mt-2 mb-2 ml-2 hidden lg:flex"
           >
             <IconBrandLinkedin size={32} />
           </a>
           <a
             aria-label="Github"
-            href="https://www.google.com"
-            className="text-xl text-[#969696] font-mono cursor-pointer tracking-tight mt-2 mb-2 ml-2 hidden lg:flex"
+            href="https://github.com/UnloadingGnat"
+            className="text-xl text-[#969696] font-mono cursor-pointer hover:text-[#757575] tracking-tight mt-2 mb-2 ml-2 hidden lg:flex"
           >
             <IconBrandGithub size={32} />
           </a>
           <a
             aria-label="Resume"
             href="https://www.google.com/"
-            className="text-xl text-[#969696] font-mono cursor-pointer tracking-tight mt-2 mb-2 ml-2 hidden md:flex"
+            className="text-xl text-[#969696] font-mono cursor-pointer hover:text-[#757575] tracking-tight mt-2 mb-2 ml-2 hidden md:flex"
           >
             <IconFileCv size={32} />
           </a>

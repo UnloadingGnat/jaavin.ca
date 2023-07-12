@@ -11,42 +11,35 @@ export default function LogoMarquee() {
           <Marquee pauseOnHover={pauseHover()} speed={150}>
             <Image
               src="/Ipex-logo.svg"
-              alt="I Build Cool Things"
+              alt="Ipex Logo"
               width={100}
               height={100}
               className="w-full"
             />
             <Image
               src="/logo1325.svg"
-              alt="I Build Cool Things"
+              alt="Team 1325 Logo"
               width={100}
               height={100}
               className="w-full"
             />
             <Image
               src="/maclogofinal.svg"
-              alt="I Build Cool Things"
+              alt="McMaster Logo"
               width={100}
               height={100}
               className="w-full"
             />
             <Image
               src="/macrocket-logo.svg"
-              alt="I Build Cool Things"
-              width={100}
-              height={100}
-              className="w-full"
-            />
-            <Image
-              src="/macblocklogo.svg"
-              alt="I Build Cool Things"
+              alt="MacRocketry Logo"
               width={100}
               height={100}
               className="w-full"
             />
             <Image
               src="/macailogo.svg"
-              alt="I Build Cool Things"
+              alt="macAI Logo"
               width={100}
               height={100}
               className="w-full"
