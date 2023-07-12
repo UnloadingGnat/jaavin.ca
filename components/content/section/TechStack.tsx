@@ -118,7 +118,7 @@ function SkillCarousel() {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex px-2">
         <button
           aria-label="skill category left"
           className="text-gray-500 mt-3 mr-1 lg:hidden"
@@ -210,9 +210,9 @@ export default function TechStack() {
   return (
     <>
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-6 sm:py-12 rounded-3xl">
-        <div className="max-w-full px-12 lg:px-8">
+        <div className="max-w-full  lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
-            <h2 className="mt-2 text-2xl lg:text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            <h2 className="mt-2 pl-5 text-2xl lg:text-4xl font-semibold tracking-normal text-white sm:text-4xl">
               Skills
             </h2>
             <SkillCarousel />

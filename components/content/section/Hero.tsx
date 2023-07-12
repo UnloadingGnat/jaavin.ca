@@ -4,10 +4,10 @@ export default function Hero() {
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-6 sm:py-12 rounded-3xl">
         <div className="max-w-full px-12 lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
-            <p className="text-xl lg:text-3xl font-semibold leading-7 text-[#999]">
+            <p className="text-xl lg:text-3xl  leading-7 text-[#999]">
               Hello!
             </p>
-            <h2 className="mt-2 text-2xl lg:text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            <h2 className="mt-2 text-2xl lg:text-4xl font-semibold tracking-normal text-white sm:text-4xl">
               I&apos;m Jaavin Mohanakumar. <br />
               Full Stack Developer.
             </h2>
