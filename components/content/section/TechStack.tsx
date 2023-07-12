@@ -212,7 +212,7 @@ export default function TechStack() {
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-6 sm:py-12 rounded-3xl">
         <div className="max-w-full  lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
-            <h2 className="mt-2 pl-5 text-2xl lg:text-4xl font-semibold tracking-normal text-white sm:text-4xl">
+            <h2 className="mt-2 pl-5 text-3xl lg:text-4xl  tracking-normal text-white sm:text-4xl">
               Skills
             </h2>
             <SkillCarousel />

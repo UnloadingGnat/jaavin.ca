@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <>
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-6 sm:py-12 rounded-3xl">
-        <div className="max-w-full px-12 lg:px-8">
+        <div className="max-w-full pl-5 lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
             <p className="text-xl lg:text-3xl  leading-7 text-[#999]">
               Hello!
