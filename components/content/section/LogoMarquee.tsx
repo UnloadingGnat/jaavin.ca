@@ -17,7 +17,7 @@ export default function LogoMarquee() {
               className="w-full"
             />
             <Image
-              src="/logo1325.svg"
+              src="/1325logo.svg"
               alt="Team 1325 Logo"
               width={100}
               height={100}
