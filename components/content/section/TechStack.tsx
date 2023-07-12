@@ -118,7 +118,7 @@ function SkillCarousel() {
 
   return (
     <>
-      <div className="flex px-2">
+      <div className="flex lg:px-0 px-3">
         <button
           aria-label="skill category left"
           className="text-gray-500 mt-3 mr-1 lg:hidden"
@@ -191,7 +191,7 @@ function SkillCarousel() {
           <IconChevronRight stroke={2} size={25} />
         </button>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6 text-lg lg:text-2xl text-white ">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:pl-1 mt-6 text-lg lg:text-2xl text-white ">
         {getSkills().map((skill, index) => (
           <div
             key={index}
@@ -210,9 +210,9 @@ export default function TechStack() {
   return (
     <>
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-6 sm:py-12 rounded-3xl">
-        <div className="max-w-full  lg:px-8">
+        <div className="max-w-full lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
-            <h2 className="mt-2 pl-5 text-3xl lg:text-4xl  tracking-normal text-white sm:text-4xl">
+            <h2 className="mt-2 pl-5 lg:pl-0 text-3xl tracking-normal text-white md:text-4xl">
               Skills
             </h2>
             <SkillCarousel />

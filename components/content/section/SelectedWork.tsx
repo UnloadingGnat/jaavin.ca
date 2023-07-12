@@ -7,7 +7,7 @@ export default function SelectedWork() {
             <h2 className="text-3xl tracking-normal text-white md:text-4xl">
               Selected Work
             </h2>
-            <p className="mt-16 text-lg  tracking-tight text-[#757575] sm:text-3xl">
+            <p className="mt-16 text-2xl tracking-tight text-[#757575] md:text-3xl">
               2021—2023
             </p>
           </div>
