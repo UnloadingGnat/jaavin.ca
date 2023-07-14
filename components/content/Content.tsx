@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import SelectedWork from "@/components/content/section/SelectedWork";
 
 const DynamicTechStack = dynamic(
-  () => import("@/components/content/section/TechStack")
+  () => import("@/components/content/section/TechStack"),
 );
 
 export default function Content() {

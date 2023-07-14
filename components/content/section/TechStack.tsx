@@ -19,7 +19,6 @@ import {
   SiMongodb,
   SiMysql,
   SiNextdotjs,
-  SiNodedotjs,
   SiOpenjdk,
   SiPostgresql,
   SiPowerapps,
@@ -27,6 +26,7 @@ import {
   SiPython,
   SiReact,
   SiRedis,
+  SiRust,
   SiSketch,
   SiStorybook,
   SiTailwindcss,
@@ -49,7 +49,7 @@ const backendSkills = [
   { icon: <SiCsharp stroke={2} size={25} />, label: "C#" },
   { icon: <SiDjango stroke={2} size={25} />, label: "Django" },
   { icon: <SiDotnet stroke={2} size={25} />, label: ".NET" },
-  { icon: <SiNodedotjs stroke={2} size={25} />, label: "NodeJS" },
+  { icon: <SiRust stroke={2} size={25} />, label: "Rust" },
 ];
 
 const cloudSkills = [
@@ -209,7 +209,7 @@ function SkillCarousel() {
 export default function TechStack() {
   return (
     <>
-      <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-6 sm:py-12 rounded-3xl">
+      <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
         <div className="max-w-full lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
             <h2 className="mt-2 pl-5 lg:pl-0 text-3xl tracking-normal text-white md:text-4xl">
