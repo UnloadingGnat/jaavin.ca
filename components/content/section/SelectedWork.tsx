@@ -25,7 +25,7 @@ export default function SelectedWork() {
             <p className="text-lg text-[#757575]">May 2023—August 2023</p>
           </div>
         </div>
-        <div className="bg-[#222329] bg-opacity-80 basis-1/2 backdrop-blur-xl py-4 rounded-3xl sm:mt-0 w-full pl-5">
+        <div className="bg-[#222329] bg-opacity-80 basis-1/2 backdrop-blur-xl py-4 rounded-3xl sm:mt-0 w-full pr-2 pl-5 lg:pr-0">
           <div className="text-lg text-[#999] flex flex-col gap-1">
             <div className="flex flex-row items-start gap-3 group">
               <IconCircleFilled className="w-4 mt-0.5 group-hover:text-white " />

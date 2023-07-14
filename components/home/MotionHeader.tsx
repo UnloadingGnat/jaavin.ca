@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function MotionHeader(props: { value: MotionValue<number> }) {
   const useTransformY = (value: MotionValue<number>) => {
-    return useTransform(value, [0, 1], [0, 1.7], {
+    return useTransform(value, [0, 1], [0, 1.5], {
       clamp: false,
     });
   };
