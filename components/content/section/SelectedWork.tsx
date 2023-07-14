@@ -16,7 +16,7 @@ export default function SelectedWork() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-2 justify-between">
-        <div className="bg-[#222329] bg-opacity-80 basis-1/4  backdrop-blur-xl py-4 rounded-3xl sm:mt-0 w-full max-w-2xl pl-5 lg:mx-0 min-h-[150px] flex flex-col justify-between">
+        <div className="bg-[#222329] bg-opacity-80 basis-1/4  backdrop-blur-xl py-4 rounded-3xl sm:mt-0 w-full pl-5 lg:mx-0 min-h-[150px] flex flex-col justify-between">
           <h2 className="text-3xl text-white sm:text-4xl">IPEX</h2>
           <div className="flex flex-col">
             <p className="text-xl lg:text-2xl text-gray-300">
@@ -25,7 +25,7 @@ export default function SelectedWork() {
             <p className="text-lg text-[#757575]">May 2023—August 2023</p>
           </div>
         </div>
-        <div className="bg-[#222329] bg-opacity-80 basis-1/2 backdrop-blur-xl py-4 rounded-3xl sm:mt-0 w-full pr-2 pl-5 lg:pr-0">
+        <div className="bg-[#222329] bg-opacity-80 basis-1/2 backdrop-blur-xl py-4 rounded-3xl sm:mt-0 w-full pr-5 pl-5 lg:pr-0">
           <div className="text-lg text-[#999] flex flex-col gap-1">
             <div className="flex flex-row items-start gap-3 group">
               <IconCircleFilled className="w-4 mt-0.5 group-hover:text-white " />
