@@ -3,8 +3,6 @@ import ExpandingArrow from "@/components/shared/expanding-arrow";
 import Image from "next/image";
 import {useRef} from "react";
 
-
-
 export default function SelectedWork() {
   const galleryRef = useRef<HTMLDivElement>(null);
 
@@ -115,95 +113,56 @@ export default function SelectedWork() {
 
       <div ref={galleryRef} className=" mt-4 flex flex-row w-full gap-5 px-10 pl-2 overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-hide">
         <div
-          className="w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
+          className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
         >
           <Image
             src="/ipexlogo.png"
-            width={80}
-            height={80}
+            width={100}
+            height={100}
             alt="image"
             className="h-full w-full rounded-xl object-cover"
           />
         </div>
         <div
-          className="w-[90%] shrink-0 snap-start pointer-events-none select-none snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
+          className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
         >
           <Image
             src="/screen.png"
-            width={80}
-            height={80}
+            width={100}
+            height={100}
             alt="image"
             className="h-full w-full rounded-xl object-cover"
           />
         </div>
-
         <div
-          className="w-[90%] shrink-0 snap-start pointer-events-none select-none snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
+          className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
         >
           <Image
             src="/screen.png"
-            width={80}
-            height={80}
+            width={100}
+            height={100}
             alt="image"
             className="h-full w-full rounded-xl object-cover"
           />
         </div>
-
         <div
-          className="w-[90%] shrink-0 snap-start pointer-events-none select-none snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
+          className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
         >
           <Image
             src="/screen.png"
-            width={80}
-            height={80}
+            width={100}
+            height={100}
             alt="image"
             className="h-full w-full rounded-xl object-cover"
           />
         </div>
-
         <div
-          className="w-[90%] shrink-0 snap-start pointer-events-none select-none snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
+          className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
         >
           <Image
             src="/screen.png"
-            width={80}
-            height={80}
-            alt="image"
-            className="h-full w-full rounded-xl object-cover"
-          />
-        </div>
-
-        <div
-          className="w-[90%] shrink-0 snap-start pointer-events-none select-none snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
-        >
-          <Image
-            src="/screen.png"
-            width={80}
-            height={80}
-            alt="image"
-            className="h-full w-full rounded-xl object-cover"
-          />
-        </div>
-
-        <div
-          className="w-[90%] shrink-0 snap-start pointer-events-none select-none snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
-        >
-          <Image
-            src="/screen.png"
-            width={80}
-            height={80}
-            alt="image"
-            className="h-full w-full rounded-xl object-cover"
-          />
-        </div>
-
-        <div
-          className="w-[90%] shrink-0 snap-start pointer-events-none select-none snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
-        >
-          <Image
-            src="/screen.png"
-            width={80}
-            height={80}
+            width={100}
+            height={100}
             alt="image"
             className="h-full w-full rounded-xl object-cover"
           />
