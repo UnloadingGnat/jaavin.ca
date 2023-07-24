@@ -99,10 +99,10 @@ export default function SelectedWork() {
         </div>
         <div className="bg-[#222329] hidden lg:block bg-opacity-80 basis-1/4 backdrop-blur-xl py-2 rounded-full sm:mt-0 w-full px-5">
           <div className="flex flex-row gap-3 justify-between  w-full">
-            <button onClick={scrollLeft} className="bg-[#393A41] hover:bg-[#4C4D56] bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-start items-center">
+            <button aria-label="scroll-gallery-left" onClick={scrollLeft} className="bg-[#393A41] hover:bg-[#4C4D56] bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-start items-center">
               <ExpandingArrow className="-ml-2 h-5 w-5 text-gray-300 rotate-180" />
             </button>
-            <button onClick={scrollRight} className="bg-[#393A41] hover:bg-[#4C4D56] bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-end items-center">
+            <button aria-label="scroll-gallery-right" onClick={scrollRight} className="bg-[#393A41] hover:bg-[#4C4D56] bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-end items-center">
               <ExpandingArrow className="-ml-8 h-5 w-5 text-gray-300" />
             </button>
 
