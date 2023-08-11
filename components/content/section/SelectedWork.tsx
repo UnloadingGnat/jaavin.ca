@@ -1,7 +1,11 @@
 import { IconCircleFilled } from "@tabler/icons-react";
 import ExpandingArrow from "@/components/shared/expanding-arrow";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useRef } from "react";
+import ipexLogo from "@/public/ipexbanner.png";
+import apiGatewayeLogo from "@/public/apigateway.png";
+import azure from "@/public/azure.png";
+import ipexMock from "@/public/ipexmock.png";
 
 interface SelectedWorkProps {
   title: string;
@@ -10,6 +14,7 @@ interface SelectedWorkProps {
   info: string[];
   skills: string[];
   website: string[];
+  images: StaticImageData[];
 }
 
 const selectedWork: SelectedWorkProps[] = [
@@ -24,6 +29,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
     website: ["https://ipexna.com", "Website"],
+    images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
   },
   {
     title: "MeGPT",
@@ -36,6 +42,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
     website: ["https://ipexna.com", "Website"],
+    images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
   },
   {
     title: "FRC Team 1325",
@@ -48,6 +55,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
     website: ["https://ipexna.com", "Website"],
+    images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
   },
   {
     title: "Tweet Copilot",
@@ -60,6 +68,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
     website: ["https://ipexna.com", "Website"],
+    images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
   },
   {
     title: "McMaster Rocketry",
@@ -72,6 +81,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
     website: ["https://ipexna.com", "Website"],
+    images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
   },
 ];
 
@@ -184,58 +194,24 @@ export default function SelectedWork() {
               </div>
             </div>
           </div>
-
           <div
             ref={(el) => {
               galleryRef.current[index] = el as HTMLDivElement;
             }}
             className=" mt-1 flex flex-row w-full gap-5 px-10 pl-2 overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-hide"
           >
-            <div className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]">
-              <Image
-                src="/ipexlogo.png"
-                width={100}
-                height={100}
-                alt="image"
-                className="h-full w-full rounded-xl object-cover"
-              />
-            </div>
-            <div className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]">
-              <Image
-                src="/screen.png"
-                width={100}
-                height={100}
-                alt="image"
-                className="h-full w-full rounded-xl object-cover"
-              />
-            </div>
-            <div className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]">
-              <Image
-                src="/screen.png"
-                width={100}
-                height={100}
-                alt="image"
-                className="h-full w-full rounded-xl object-cover"
-              />
-            </div>
-            <div className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]">
-              <Image
-                src="/screen.png"
-                width={100}
-                height={100}
-                alt="image"
-                className="h-full w-full rounded-xl object-cover"
-              />
-            </div>
-            <div className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]">
-              <Image
-                src="/screen.png"
-                width={100}
-                height={100}
-                alt="image"
-                className="h-full w-full rounded-xl object-cover"
-              />
-            </div>
+            {work.images.map((image, index) => (
+              <div
+                key={index}
+                className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
+              >
+                <Image
+                  src={image}
+                  alt="image"
+                  className="h-full w-full rounded-xl object-cover"
+                />
+              </div>
+            ))}
           </div>
         </div>
       ))}
