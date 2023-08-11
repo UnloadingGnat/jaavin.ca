@@ -2,6 +2,7 @@ import Hero from "@/components/content/section/Hero";
 import LogoMarquee from "@/components/content/section/LogoMarquee";
 import dynamic from "next/dynamic";
 import SelectedWork from "@/components/content/section/SelectedWork";
+import About from "@/components/content/section/About";
 
 const DynamicTechStack = dynamic(
   () => import("@/components/content/section/TechStack"),
@@ -16,6 +17,7 @@ export default function Content() {
           <DynamicTechStack />
           <LogoMarquee />
           <SelectedWork />
+          <About />
         </div>
       </div>
     </>

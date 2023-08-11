@@ -6,6 +6,7 @@ import ipexLogo from "@/public/ipexbanner.png";
 import apiGatewayeLogo from "@/public/apigateway.png";
 import azure from "@/public/azure.png";
 import ipexMock from "@/public/ipexmock.png";
+import megptBanner from "@/public/megptBanner.png";
 
 interface SelectedWorkProps {
   title: string;
@@ -40,7 +41,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["React", "TypeScript", "Next.js", "Google Cloud", "Tailwind CSS"],
     website: ["https://megpt.xyz", "Website"],
-    images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
+    images: [megptBanner, apiGatewayeLogo, ipexMock, azure],
   },
   {
     title: "FRC Team 1325",
