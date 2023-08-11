@@ -24,8 +24,8 @@ const selectedWork: SelectedWorkProps[] = [
     date: "May 2023—August 2023",
     info: [
       "Implemented file transfer service in C# using .NET for business-critical process reducing downtime from 14% to 2%.",
-      "Reduced missed promises on API Gateway improving accuracy of item-vendor mapping by 183 basis points. (Update...)",
-      "Planned migration from Microsoft SQL server to MongoDB for key business service.",
+      "Reduced missed promises on API Gateway improving accuracy of item-vendor mapping by 183 basis points on ASP.NET.",
+      "Planned migration of a real-time application from Microsoft SQL server to MongoDB for key business service.",
     ],
     skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
     website: ["https://ipexna.com", "Website"],
@@ -34,53 +34,48 @@ const selectedWork: SelectedWorkProps[] = [
   {
     title: "MeGPT",
     position: null,
-    date: "May 2023—August 2023",
+    date: "July 2023—",
     info: [
-      "Implemented file transfer service in C# using .NET for business-critical process reducing downtime from 14% to 2%.",
-      "Reduced missed promises on API Gateway improving accuracy of item-vendor mapping by 183 basis points. (Update...)",
-      "Planned migration from Microsoft SQL server to MongoDB for key business service.",
+      "MeGPT enables creators, brands, artists, publishers, agencies, and businesses of all sizes to create an AI clone of themselves, which they can share.",
     ],
-    skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
-    website: ["https://ipexna.com", "Website"],
+    skills: ["React", "TypeScript", "Next.js", "Google Cloud", "Tailwind CSS"],
+    website: ["https://megpt.xyz", "Website"],
     images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
   },
   {
     title: "FRC Team 1325",
     position: "Software Development Co-Lead",
-    date: "May 2023—August 2023",
+    date: "September 2021—June 2022",
     info: [
-      "Implemented file transfer service in C# using .NET for business-critical process reducing downtime from 14% to 2%.",
-      "Reduced missed promises on API Gateway improving accuracy of item-vendor mapping by 183 basis points. (Update...)",
-      "Planned migration from Microsoft SQL server to MongoDB for key business service.",
+      "Led the design, implementation, and testing of software systems in Java for a 120lb competitive robot.",
+      "Innovated in autonomous programming using PID controllers, control systems, and computer vision.",
+      "In this community robotics team previously sponsored by NASA, the robot has won many competitions and was awarded the Excellence in Engineering Award at the FIRST Robotics World Championship in Houston.",
     ],
-    skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
-    website: ["https://ipexna.com", "Website"],
+    skills: ["Java", "C++", "Control Systems", "Computer Vision"],
+    website: ["/team1325-engineering-notebook.pdf", "Engineering Notebook"],
     images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
   },
   {
     title: "Tweet Copilot",
     position: null,
-    date: "May 2023—August 2023",
+    date: "April 2023—May 2023",
     info: [
-      "Implemented file transfer service in C# using .NET for business-critical process reducing downtime from 14% to 2%.",
-      "Reduced missed promises on API Gateway improving accuracy of item-vendor mapping by 183 basis points. (Update...)",
-      "Planned migration from Microsoft SQL server to MongoDB for key business service.",
+      "A social media platform that uses ChatGPT to keep your messages within the 280-character limit.",
     ],
-    skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
-    website: ["https://ipexna.com", "Website"],
+    skills: ["React", "TypeScript", "Next.js", "MySQL", "Tailwind CSS"],
+    website: ["https://github.com/UnloadingGnat/tweetcopilot", "Github"],
     images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
   },
   {
     title: "McMaster Rocketry",
     position: "Assistant Project Manager",
-    date: "May 2023—August 2023",
+    date: "November 2022—",
     info: [
-      "Implemented file transfer service in C# using .NET for business-critical process reducing downtime from 14% to 2%.",
-      "Reduced missed promises on API Gateway improving accuracy of item-vendor mapping by 183 basis points. (Update...)",
-      "Planned migration from Microsoft SQL server to MongoDB for key business service.",
+      "Coordinated between the software controls sub-team of 15 members and the project manager to drive successful rocket launch at Spaceport America in New Mexico.",
+      "Orchestrated the team's timelines, coordinating tasks among a rocketry team of over 70 highly skilled members.",
     ],
-    skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
-    website: ["https://ipexna.com", "Website"],
+    skills: ["Rust", "React", "TypeScript", "MongoDB"],
+    website: ["https://www.macrocketry.ca/", "Website"],
     images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
   },
 ];
@@ -166,7 +161,7 @@ export default function SelectedWork() {
               className="bg-[#3A416D] bg-opacity-80 basis-1/4 group backdrop-blur-xl py-4 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 min-h-[65px] flex flex-col justify-between"
             >
               <div className="flex flex-row gap-3">
-                <h3 className="text-xl ml-2 lg:text-2xl text-gray-300">
+                <h3 className="text-xl ml-2 lg:text-xl xl:text-2xl text-gray-300">
                   {work.website[1]}
                 </h3>
                 <ExpandingArrow className="mt-1 -ml-2 h-5 w-5 text-gray-300" />

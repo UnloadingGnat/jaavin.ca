@@ -51,7 +51,7 @@ export default function Navbar(props: { footer?: boolean }) {
           </a>
           <a
             aria-label="Resume"
-            href="https://www.google.com/"
+            href="/JaavinMohanakumarResume.pdf"
             className="text-xl text-[#969696] font-mono cursor-pointer hover:text-[#757575] tracking-tight mt-2 mb-2 ml-2 hidden md:flex"
           >
             <IconFileCv size={32} />
