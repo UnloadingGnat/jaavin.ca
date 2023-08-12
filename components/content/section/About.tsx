@@ -86,8 +86,8 @@ export default function About() {
           </div>
         </a>
       </div>
-      <div className="bg-[#000] bg-opacity-0 py-44 lg:py-52 rounded-3xl">
-
+      {/* BOTTOM SPACER */}
+      <div className="bg-[#000] bg-opacity-0 py-44 lg:py-52 2xl:py-96 rounded-3xl">
       </div>
     </>
   );
