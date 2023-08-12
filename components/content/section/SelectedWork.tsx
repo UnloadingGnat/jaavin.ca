@@ -159,7 +159,7 @@ export default function SelectedWork() {
           <div className="flex flex-col lg:flex-row gap-2 justify-between">
             <a
               href={work.website[0]}
-              className="bg-[#3A416D] bg-opacity-80 basis-1/4 group backdrop-blur-xl py-4 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 min-h-[65px] flex flex-col justify-between"
+              className="bg-[#3A416D] hover:bg-[#4D5691] transition-all ease-in-out bg-opacity-80 basis-1/4 group backdrop-blur-xl py-4 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 min-h-[65px] flex flex-col justify-between"
             >
               <div className="flex flex-row gap-3">
                 <h3 className="text-xl ml-2 lg:text-xl xl:text-2xl text-gray-300">
@@ -176,14 +176,14 @@ export default function SelectedWork() {
                 <button
                   aria-label="scroll-gallery-left"
                   onClick={() => scrollLeft(index)}
-                  className="bg-[#393A41] hover:bg-[#4C4D56] bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-start items-center"
+                  className="bg-[#393A41] hover:bg-[#4C4D56] transition-all ease-in-out bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-start items-center"
                 >
                   <ExpandingArrow className="-ml-2 h-5 w-5 text-gray-300 rotate-180" />
                 </button>
                 <button
                   aria-label="scroll-gallery-right"
                   onClick={() => scrollRight(index)}
-                  className="bg-[#393A41] hover:bg-[#4C4D56] bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-end items-center"
+                  className="bg-[#393A41] hover:bg-[#4C4D56] transition-all ease-in-out bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-end items-center"
                 >
                   <ExpandingArrow className="-ml-8 h-5 w-5 text-gray-300" />
                 </button>
