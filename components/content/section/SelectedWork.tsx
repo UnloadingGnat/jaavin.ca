@@ -7,6 +7,13 @@ import apiGatewayeLogo from "@/public/apigateway.png";
 import azure from "@/public/azure.png";
 import ipexMock from "@/public/ipexmock.png";
 import megptBanner from "@/public/megptBanner.png";
+import megptMock from "@/public/megptmock.png";
+import createMegppt from "@/public/createmegpt.png";
+import jaavinMeGPT from "@/public/jaavinMeGPT.png";
+import province1325 from "@/public/1325Province.png";
+import cad1325 from "@/public/cad1325.png";
+import banner1325 from "@/public/banner1325.png";
+import comp13252020 from "@/public/13252020comp.png";
 
 interface SelectedWorkProps {
   title: string;
@@ -41,7 +48,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["React", "TypeScript", "Next.js", "Google Cloud", "Tailwind CSS"],
     website: ["https://megpt.xyz", "Website"],
-    images: [megptBanner, apiGatewayeLogo, ipexMock, azure],
+    images: [megptBanner, megptMock, jaavinMeGPT, createMegppt],
   },
   {
     title: "FRC Team 1325",
@@ -54,7 +61,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["Java", "C++", "Control Systems", "Computer Vision"],
     website: ["/team1325-engineering-notebook.pdf", "Engineering Notebook"],
-    images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
+    images: [province1325, banner1325, cad1325, comp13252020],
   },
   {
     title: "Tweet Copilot",
