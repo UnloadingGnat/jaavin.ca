@@ -1,5 +1,6 @@
 import "./globals.css";
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Jaavin - Software Developer",
@@ -22,7 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black overflow-x-hidden">{children}</body>
+      <body className="bg-black overflow-x-hidden">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
