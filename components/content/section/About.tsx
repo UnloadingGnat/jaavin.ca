@@ -40,7 +40,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-2 justify-between mb-28 lg:mb-96 xl:mb-[849px]">
+      <div className="flex flex-col lg:flex-row gap-2 justify-between">
         <a
           href="mailto:hi@jaavin.ca"
           className="bg-[#3A416D] hover:bg-[#4D5691] transition-all ease-in-out bg-opacity-80 basis-1/4 group backdrop-blur-xl py-4 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 min-h-[65px] flex flex-col justify-between"
