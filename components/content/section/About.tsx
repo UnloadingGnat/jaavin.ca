@@ -86,6 +86,9 @@ export default function About() {
           </div>
         </a>
       </div>
+      <div className="bg-[#000] bg-opacity-0 py-44 lg:py-52 rounded-3xl">
+
+      </div>
     </>
   );
 }
