@@ -16,7 +16,6 @@ export default function About() {
               <p className="mt-0 md:mt-16 text-3xl tracking-normal text-[#54565E] md:text-4xl">
                 pronounced &apos;jaah—vin&apos;
               </p>
-
             </div>
           </div>
         </div>
@@ -24,9 +23,10 @@ export default function About() {
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
         <div className="max-w-full pl-5 lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
-
             <p className="mt-2 text-lg tracking-normal text-white sm:text-3xl">
-              I own a computer. Currently based in Canada. Previously lived / worked / studied in Toronto, Oakville, and Hamilton. Likes tech, swimming, volunteering, coffee, robotics, and rockets.
+              I own a computer. Currently based in Canada. Previously lived /
+              worked / studied in Toronto, Oakville, and Hamilton. Likes tech,
+              swimming, volunteering, coffee, robotics, and rockets.
             </p>
           </div>
         </div>
@@ -34,10 +34,9 @@ export default function About() {
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
         <div className="max-w-full pl-5 lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
-
-              <p className="mt-24 text-3xl tracking-normal text-white md:text-4xl">
-                Want me to build you something cool?
-              </p>
+            <p className="mt-24 text-3xl tracking-normal text-white md:text-4xl">
+              Want me to build you something cool?
+            </p>
           </div>
         </div>
       </div>

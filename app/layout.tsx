@@ -1,7 +1,6 @@
 import "./globals.css";
 import React from "react";
 
-// TODO: add og:image to app
 export const metadata = {
   title: "Jaavin - Software Developer",
   description:
