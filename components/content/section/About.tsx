@@ -6,14 +6,11 @@ export default function About() {
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
         <div className="max-w-full pl-5 lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
-            <h2 className="text-3xl tracking-normal text-white md:text-4xl">
-              About
-            </h2>
             <div className="flex flex-col md:flex-row justify-between">
-              <p className="mt-16 text-3xl tracking-normal text-[#999] md:text-4xl">
+              <h2 className="mt-28 text-3xl tracking-normal text-white md:text-5xl">
                 Jaavin
-              </p>
-              <p className="mt-0 md:mt-16 text-3xl tracking-normal text-[#54565E] md:text-4xl">
+              </h2>
+              <p className="mt-0 md:mt-28 text-3xl tracking-normal text-[#54565E] md:text-4xl">
                 pronounced &apos;jaah—vin&apos;
               </p>
             </div>
