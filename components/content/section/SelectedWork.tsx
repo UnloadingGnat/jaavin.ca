@@ -13,7 +13,15 @@ import jaavinMeGPT from "@/public/jaavinMeGPT.png";
 import province1325 from "@/public/1325Province.png";
 import cad1325 from "@/public/cad1325.png";
 import banner1325 from "@/public/banner1325.png";
-import comp13252020 from "@/public/13252020comp.png";
+import blurRobot1325comp2020 from "@/public/robot1325comp2020blur.png";
+import tweetCopilotLaptop from "@/public/tweetcopilotlaptop.png";
+import iphoneTweet from "@/public/iphonetweet.png";
+import functionalDesign from "@/public/functionalDesign.png";
+import highLevelTweet from "@/public/highleveltweet.png";
+import rocketrySpaceLogo from "@/public/rocketrySpaceLogo.png";
+import rocketBlur from "@/public/rocketBlur.png";
+import spaceportMacRocketIdle from "@/public/spaceportmacrocketidle.png";
+import spaceportMacRocketLaunch from "@/public/spaceportMacRocketLaunch.png";
 
 interface SelectedWorkProps {
   title: string;
@@ -61,7 +69,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["Java", "C++", "Control Systems", "Computer Vision"],
     website: ["/team1325-engineering-notebook.pdf", "Engineering Notebook"],
-    images: [province1325, banner1325, cad1325, comp13252020],
+    images: [province1325, banner1325, blurRobot1325comp2020, cad1325],
   },
   {
     title: "Tweet Copilot",
@@ -72,7 +80,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["React", "TypeScript", "Next.js", "MySQL", "Tailwind CSS"],
     website: ["https://github.com/UnloadingGnat/tweetcopilot", "Github"],
-    images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
+    images: [tweetCopilotLaptop, iphoneTweet, highLevelTweet, functionalDesign],
   },
   {
     title: "McMaster Rocketry",
@@ -84,7 +92,12 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["Rust", "React", "TypeScript", "MongoDB"],
     website: ["https://www.macrocketry.ca/", "Website"],
-    images: [ipexLogo, apiGatewayeLogo, ipexMock, azure],
+    images: [
+      rocketrySpaceLogo,
+      spaceportMacRocketIdle,
+      spaceportMacRocketLaunch,
+      rocketBlur,
+    ],
   },
 ];
 
@@ -210,7 +223,8 @@ export default function SelectedWork() {
               >
                 <Image
                   src={image}
-                  alt="image"
+                  placeholder="blur"
+                  alt="Image related to selected work"
                   className="h-full w-full rounded-xl object-cover"
                 />
               </div>
