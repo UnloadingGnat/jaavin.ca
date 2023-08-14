@@ -8,7 +8,7 @@ const DynamicTechStack = dynamic(
   () => import("@/components/content/section/TechStack"),
 );
 
-export default function Content() {
+export default function Content({ height }: { height: number }) {
   return (
     <>
       <div className="px-1 lg:px-2">
@@ -17,7 +17,7 @@ export default function Content() {
           <DynamicTechStack />
           <LogoMarquee />
           <SelectedWork />
-          <About />
+          <About height={height} />
         </div>
       </div>
     </>

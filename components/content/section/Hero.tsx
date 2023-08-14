@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <>
       {/* TOP SPACER */}
-      <div className="bg-[#000] bg-opacity-0 py-10 md:py-20 lg:py-28 2xl:py-52"></div>
+      {/*<div className="bg-[#000] bg-opacity-0 py-10 md:py-20 lg:py-28 2xl:py-52"></div>*/}
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
         <div className="max-w-full pl-5 lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">

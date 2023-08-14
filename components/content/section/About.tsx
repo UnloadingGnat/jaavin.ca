@@ -1,6 +1,10 @@
 import ExpandingArrow from "@/components/shared/expanding-arrow";
 
-export default function About() {
+export default function About({ height }: { height: number }) {
+  const bottomSpacerStyles = {
+    paddingTop: `${height + 50}px`, // Adjust the top spacing based on the height state
+  };
+
   return (
     <>
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
@@ -84,7 +88,10 @@ export default function About() {
         </a>
       </div>
       {/* BOTTOM SPACER */}
-      <div className="bg-[#000] bg-opacity-0 py-44 md:py-36 lg:py-44 xl:py-52 2xl:py-96"></div>
+      <div
+        className="bg-[#000] bg-opacity-0 py-44 md:py-36 lg:py-44 xl:py-52 2xl:py-96"
+        style={bottomSpacerStyles}
+      ></div>
     </>
   );
 }
