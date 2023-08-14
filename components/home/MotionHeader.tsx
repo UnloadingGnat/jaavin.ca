@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function MotionHeader(props: { value: MotionValue<number> }) {
   const useTransformY = (value: MotionValue<number>) => {
-    return useTransform(value, [0, 1], [0, 1.07], {
+    return useTransform(value, [0, 1], [0, 0.095], {
       clamp: false,
     });
   };
@@ -12,7 +12,7 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
   return (
     <>
       <motion.div
-        className="relative w-screen -z-50"
+        className="fixed w-screen -z-50"
         style={{ y: useTransformY(props.value) }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
