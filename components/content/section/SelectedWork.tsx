@@ -14,14 +14,14 @@ import province1325 from "@/public/1325Province.png";
 import cad1325 from "@/public/cad1325.png";
 import banner1325 from "@/public/banner1325.png";
 import blurRobot1325comp2020 from "@/public/robot1325comp2020blur.png";
-import tweetCopilotLaptop from "@/public/tweetcopilotlaptop.png";
+import tweetCopilotLaptop from "@/public/tweetcopilotlaptopCompress.png";
 import iphoneTweet from "@/public/iphonetweet.png";
 import functionalDesign from "@/public/functionalDesign.png";
 import highLevelTweet from "@/public/highleveltweet.png";
 import rocketrySpaceLogo from "@/public/rocketrySpaceLogo.png";
 import rocketBlur from "@/public/rocketBlur.png";
-import spaceportMacRocketIdle from "@/public/spaceportmacrocketidle.png";
-import spaceportMacRocketLaunch from "@/public/spaceportMacRocketLaunch.png";
+import spaceportMacRocketIdle from "@/public/spaceportmacrocketidleCompress.png";
+import spaceportMacRocketLaunch from "@/public/spaceportMacRocketLaunchCompress.png";
 
 interface SelectedWorkProps {
   title: string;
