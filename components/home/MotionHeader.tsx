@@ -16,7 +16,14 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
     return Math.floor(Math.random() * MAX_GRADIENT_COLOURS) + 1;
   };
 
-  const currentColorIndex = getRandomGradientColour();
+  const [currentColorIndex, setCurrentColorIndex] = useState(getRandomGradientColour());
+
+  const cycleGradientColor = () => {
+    setCurrentColorIndex((prevIndex) => (prevIndex % MAX_GRADIENT_COLOURS) + 1);
+    console.log("HIIII")
+    gradient.initGradient("#gradient-canvas");
+  };
+
 
   const updateHeight = () => {
     if (elementRef.current) {
@@ -62,7 +69,7 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
             <canvas
               id="gradient-canvas"
               data-transition-in
-              className={`absolute inset-[0.5px] opacity-100 gradient-colour-${currentColorIndex}`}
+              className={`absolute opacity-100 inset-y-0.5 gradient-colour-${currentColorIndex}`}
             ></canvas>
             <div className="relative">
               <div>
@@ -80,8 +87,8 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
         </Suspense>
       </motion.div>
       {/* TOP SPACER */}
-      <div className="bg-[#000] bg-opacity-0" style={topSpacerStyles}></div>
-      <Content height={height} />
+      <div onClick={cycleGradientColor} className="bg-[#000] bg-opacity-0" style={topSpacerStyles}></div>
+      <Content cycleFunc={cycleGradientColor}  height={height} />
     </>
   );
 }

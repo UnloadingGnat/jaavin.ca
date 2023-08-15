@@ -1,6 +1,6 @@
 import ExpandingArrow from "@/components/shared/expanding-arrow";
 
-export default function About({ height }: { height: number }) {
+export default function About({ height, cycleFunc }: { height: number, cycleFunc: () => void }) {
   const bottomSpacerStyles = {
     paddingTop: `${height + 50}px`, // Adjust the top spacing based on the height state
   };
@@ -89,6 +89,7 @@ export default function About({ height }: { height: number }) {
       </div>
       {/* BOTTOM SPACER */}
       <div
+        onClick={cycleFunc}
         className="bg-[#000] bg-opacity-0 py-44 md:py-36 lg:py-44 xl:py-52 2xl:py-96"
         style={bottomSpacerStyles}
       ></div>
