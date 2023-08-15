@@ -13,8 +13,17 @@
 
 #gradient-canvas {
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
+
+@media (min-width: 1024px) {
+  #gradient-canvas {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+
 
 .gradient-colour-1 {
   --gradient-color-1: #d1d5d8;

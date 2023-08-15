@@ -58,7 +58,7 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
     <>
       <motion.div
         ref={elementRef}
-        className="fixed w-screen -z-50"
+        className="fixed w-screen -z-50 select-none"
         style={{ y: useTransformY(props.value) }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -87,7 +87,7 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
         </Suspense>
       </motion.div>
       {/* TOP SPACER */}
-      <div onClick={cycleGradientColor} className="bg-[#000] bg-opacity-0" style={topSpacerStyles}></div>
+      <div onClick={cycleGradientColor} className="bg-[#000] bg-opacity-0 select-none" style={topSpacerStyles}></div>
       <Content cycleFunc={cycleGradientColor}  height={height} />
     </>
   );
