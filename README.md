@@ -1,1 +1,3 @@
-<img alt="Performance" src="/performance.png">
+<img alt="Performance" src="/readmeImage.png">
+
+Built using
