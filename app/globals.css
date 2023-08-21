@@ -24,10 +24,10 @@
 }
 
 .gradient-colour-1 {
-  --gradient-color-1: #3a94d0;
-  --gradient-color-2: #5533ff;
-  --gradient-color-3: #1ca8ff;
-  --gradient-color-4: #84f6d5;
+  --gradient-color-1: #e63946;
+  --gradient-color-2: #f1faee;
+  --gradient-color-3: #a8dadc;
+  --gradient-color-4: #457b9d;
 }
 
 .gradient-colour-2 {
@@ -38,10 +38,10 @@
 }
 
 .gradient-colour-3 {
-  --gradient-color-1: #e63946;
-  --gradient-color-2: #f1faee;
-  --gradient-color-3: #a8dadc;
-  --gradient-color-4: #457b9d;
+  --gradient-color-1: #3a94d0;
+  --gradient-color-2: #5533ff;
+  --gradient-color-3: #1ca8ff;
+  --gradient-color-4: #84f6d5;
 }
 
 .gradient-colour-4 {
