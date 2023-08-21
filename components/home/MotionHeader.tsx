@@ -6,7 +6,7 @@ import { Gradient } from "@/components/shared/Gradient";
 
 const gradient = new Gradient();
 
-export default function MotionHeader(props: { value: MotionValue<number> }) {
+export default function MotionHeader({scrollValue}: { scrollValue: MotionValue<number> }) {
   const MAX_GRADIENT_COLOURS = 5;
 
   const [height, setHeight] = useState(0);
@@ -17,6 +17,7 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
   };
 
   const [currentColorIndex, setCurrentColorIndex] = useState(getRandomGradientColour());
+  console.log(currentColorIndex)
 
   const cycleGradientColor = () => {
     setCurrentColorIndex((prevIndex) => (prevIndex % MAX_GRADIENT_COLOURS) + 1);
@@ -54,12 +55,14 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
     paddingTop: `${height}px`, // Adjust the top spacing based on the height state
   };
 
+
+
   return (
     <>
       <motion.div
         ref={elementRef}
         className="fixed w-screen -z-50 select-none"
-        style={{ y: useTransformY(props.value) }}
+        style={{ y: useTransformY(scrollValue) }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -69,7 +72,7 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
             <canvas
               id="gradient-canvas"
               data-transition-in
-              className={`absolute opacity-100 inset-y-0.5 gradient-colour-${currentColorIndex}`}
+              className={`absolute opacity-100 inset-y-0 top-1 overflow-hidden lg:inset-y-0.5 gradient-colour-${currentColorIndex}`}
             ></canvas>
             <div className="relative">
               <div>
@@ -79,6 +82,7 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
                   width={500}
                   height={500}
                   priority={true}
+                  onLoadingComplete={updateHeight}
                   className="w-full"
                 />
               </div>
@@ -87,7 +91,7 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
         </Suspense>
       </motion.div>
       {/* TOP SPACER */}
-      <div onClick={cycleGradientColor} className="bg-[#000] bg-opacity-0 select-none" style={topSpacerStyles}></div>
+      <div onClick={cycleGradientColor} className="bg-[#000] bg-opacity-0 select-none cursor-pointer" style={topSpacerStyles}></div>
       <Content cycleFunc={cycleGradientColor}  height={height} />
     </>
   );

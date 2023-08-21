@@ -14,35 +14,35 @@ export default function LogoMarquee() {
               alt="Ipex Logo"
               width={100}
               height={100}
-              className="w-full"
+              className="w-full pointer-events-none select-none"
             />
             <Image
               src="/1325logo.svg"
               alt="Team 1325 Logo"
               width={100}
               height={100}
-              className="w-full"
+              className="w-full pointer-events-none select-none"
             />
             <Image
               src="/maclogofinal.svg"
               alt="McMaster Logo"
               width={100}
               height={100}
-              className="w-full"
+              className="w-full pointer-events-none select-none"
             />
             <Image
               src="/macrocket-logo.svg"
               alt="MacRocketry Logo"
               width={100}
               height={100}
-              className="w-full"
+              className="w-full pointer-events-none select-none"
             />
             <Image
               src="/macailogo.svg"
               alt="macAI Logo"
               width={100}
               height={100}
-              className="w-full"
+              className="w-full pointer-events-none select-none"
             />
           </Marquee>
         </div>

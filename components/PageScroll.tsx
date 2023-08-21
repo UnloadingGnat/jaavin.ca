@@ -10,7 +10,7 @@ export default function PageScroll() {
     <>
       <div className="min-h-screen">
         <Navbar />
-        <MotionHeader value={scrollY} />
+        <MotionHeader scrollValue={scrollY} />
         <Navbar footer={true} />
       </div>
     </>
