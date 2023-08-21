@@ -76,7 +76,7 @@ export default function MotionHeader({scrollValue}: { scrollValue: MotionValue<n
             <canvas
               id="gradient-canvas"
               data-transition-in
-              className={`absolute opacity-100 inset-x-2 top-1 overflow-hidden lg:inset-y-0.5 gradient-colour-${currentColorIndex}`}
+              className={`absolute opacity-100 inset-x-4 top-1 overflow-hidden lg:inset-y-0.5 gradient-colour-${currentColorIndex}`}
             ></canvas>
             <div className="relative">
               <div>
