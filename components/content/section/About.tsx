@@ -1,6 +1,12 @@
 import ExpandingArrow from "@/components/shared/expanding-arrow";
 
-export default function About({ height, cycleFunc }: { height: number, cycleFunc: () => void }) {
+export default function About({
+  height,
+  cycleFunc,
+}: {
+  height: number;
+  cycleFunc: () => void;
+}) {
   const bottomSpacerStyles = {
     paddingTop: `${height + 50}px`, // Adjust the top spacing based on the height state
   };

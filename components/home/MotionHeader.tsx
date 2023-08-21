@@ -6,20 +6,23 @@ import { Gradient } from "@/components/shared/Gradient";
 
 const gradient = new Gradient();
 
-export default function MotionHeader({scrollValue}: { scrollValue: MotionValue<number> }) {
+export default function MotionHeader({
+  scrollValue,
+}: {
+  scrollValue: MotionValue<number>;
+}) {
   const MAX_GRADIENT_COLOURS = 5;
 
   const [height, setHeight] = useState(0);
   const elementRef = useRef<HTMLDivElement | null>(null);
 
   const [currentColorIndex, setCurrentColorIndex] = useState(4);
-  console.log(currentColorIndex)
+  console.log(currentColorIndex);
 
   const cycleGradientColor = () => {
     setCurrentColorIndex((prevIndex) => (prevIndex % MAX_GRADIENT_COLOURS) + 1);
     gradient.initGradient("#gradient-canvas");
   };
-
 
   const updateHeight = () => {
     if (elementRef.current) {
@@ -40,16 +43,7 @@ export default function MotionHeader({scrollValue}: { scrollValue: MotionValue<n
     gradient.initGradient("#gradient-canvas");
   }, []);
 
-
-  useEffect(() => {
-    console.log(scrollValue.get())
-    if (scrollValue.get() >= 300){
-      cycleGradientColor();
-    }
-  }, []);
-
-
-    const useTransformY = (value: MotionValue<number>) => {
+  const useTransformY = (value: MotionValue<number>) => {
     return useTransform(value, [0, 1], [0, 0.075], {
       clamp: false,
     });
@@ -58,8 +52,6 @@ export default function MotionHeader({scrollValue}: { scrollValue: MotionValue<n
   const topSpacerStyles = {
     paddingTop: `${height}px`, // Adjust the top spacing based on the height state
   };
-
-
 
   return (
     <>
@@ -73,10 +65,11 @@ export default function MotionHeader({scrollValue}: { scrollValue: MotionValue<n
       >
         <Suspense fallback={null}>
           <div className="relative">
+            <div className="absolute lg:hidden inset-2 animate-gradient opacity-100"></div>
             <canvas
               id="gradient-canvas"
               data-transition-in
-              className={`absolute opacity-100 inset-x-4 top-1 overflow-hidden lg:inset-y-0.5 gradient-colour-${currentColorIndex}`}
+              className={`absolute hidden lg:block opacity-100 top-1 overflow-hidden lg:inset-y-0.5 gradient-colour-${currentColorIndex}`}
             ></canvas>
             <div className="relative">
               <div>
@@ -95,8 +88,12 @@ export default function MotionHeader({scrollValue}: { scrollValue: MotionValue<n
         </Suspense>
       </motion.div>
       {/* TOP SPACER */}
-      <div onClick={cycleGradientColor} className="bg-[#000] bg-opacity-0 select-none cursor-pointer" style={topSpacerStyles}></div>
-      <Content cycleFunc={cycleGradientColor}  height={height} />
+      <div
+        onClick={cycleGradientColor}
+        className="bg-[#000] bg-opacity-0 select-none cursor-pointer"
+        style={topSpacerStyles}
+      ></div>
+      <Content cycleFunc={cycleGradientColor} height={height} />
     </>
   );
 }

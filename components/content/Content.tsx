@@ -8,7 +8,13 @@ const DynamicTechStack = dynamic(
   () => import("@/components/content/section/TechStack"),
 );
 
-export default function Content({ height, cycleFunc }: { height: number, cycleFunc: () => void }) {
+export default function Content({
+  height,
+  cycleFunc,
+}: {
+  height: number;
+  cycleFunc: () => void;
+}) {
   return (
     <>
       <div className="px-1 lg:px-2">
