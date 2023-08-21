@@ -12,16 +12,11 @@ export default function MotionHeader({scrollValue}: { scrollValue: MotionValue<n
   const [height, setHeight] = useState(0);
   const elementRef = useRef<HTMLDivElement | null>(null);
 
-  const getRandomGradientColour = () => {
-    return Math.floor(Math.random() * MAX_GRADIENT_COLOURS) + 1;
-  };
-
-  const [currentColorIndex, setCurrentColorIndex] = useState(getRandomGradientColour());
+  const [currentColorIndex, setCurrentColorIndex] = useState(4);
   console.log(currentColorIndex)
 
   const cycleGradientColor = () => {
     setCurrentColorIndex((prevIndex) => (prevIndex % MAX_GRADIENT_COLOURS) + 1);
-    console.log("HIIII")
     gradient.initGradient("#gradient-canvas");
   };
 
@@ -45,7 +40,16 @@ export default function MotionHeader({scrollValue}: { scrollValue: MotionValue<n
     gradient.initGradient("#gradient-canvas");
   }, []);
 
-  const useTransformY = (value: MotionValue<number>) => {
+
+  useEffect(() => {
+    console.log(scrollValue.get())
+    if (scrollValue.get() >= 300){
+      cycleGradientColor();
+    }
+  }, []);
+
+
+    const useTransformY = (value: MotionValue<number>) => {
     return useTransform(value, [0, 1], [0, 0.075], {
       clamp: false,
     });
@@ -72,7 +76,7 @@ export default function MotionHeader({scrollValue}: { scrollValue: MotionValue<n
             <canvas
               id="gradient-canvas"
               data-transition-in
-              className={`absolute opacity-100 inset-y-0 top-1 overflow-hidden lg:inset-y-0.5 gradient-colour-${currentColorIndex}`}
+              className={`absolute opacity-100 inset-x-2 top-1 overflow-hidden lg:inset-y-0.5 gradient-colour-${currentColorIndex}`}
             ></canvas>
             <div className="relative">
               <div>
