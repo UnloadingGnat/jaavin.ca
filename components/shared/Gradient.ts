@@ -1,4 +1,5 @@
 /* eslint-disable */
+// @ts-nocheck
 
 //Converting colors to proper format
 function normalizeColor(hexCode) {
