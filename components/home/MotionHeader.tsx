@@ -3,6 +3,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Content from "@/components/content/Content";
 import { Gradient } from "@/components/shared/Gradient";
+import {isMobile} from "react-device-detect";
 
 const gradient = new Gradient();
 
@@ -17,7 +18,6 @@ export default function MotionHeader({
   const elementRef = useRef<HTMLDivElement | null>(null);
 
   const [currentColorIndex, setCurrentColorIndex] = useState(4);
-  console.log(currentColorIndex);
 
   const cycleGradientColor = () => {
     setCurrentColorIndex((prevIndex) => (prevIndex % MAX_GRADIENT_COLOURS) + 1);
@@ -40,7 +40,10 @@ export default function MotionHeader({
   }, []);
 
   useEffect(() => {
-    gradient.initGradient("#gradient-canvas");
+    if (!isMobile) {
+      gradient.initGradient("#gradient-canvas");
+      console.log("init gradient")
+    }
   }, []);
 
   const useTransformY = (value: MotionValue<number>) => {
