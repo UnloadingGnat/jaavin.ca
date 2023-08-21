@@ -2,10 +2,27 @@ import { motion, MotionValue, useTransform } from "framer-motion";
 import { Suspense, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Content from "@/components/content/Content";
+import { Gradient } from "@/components/shared/Gradient";
 
-export default function MotionHeader(props: { value: MotionValue<number> }) {
+const gradient = new Gradient();
+
+export default function MotionHeader({
+  scrollValue,
+}: {
+  scrollValue: MotionValue<number>;
+}) {
+  const MAX_GRADIENT_COLOURS = 5;
+
   const [height, setHeight] = useState(0);
   const elementRef = useRef<HTMLDivElement | null>(null);
+
+  const [currentColorIndex, setCurrentColorIndex] = useState(4);
+  console.log(currentColorIndex);
+
+  const cycleGradientColor = () => {
+    setCurrentColorIndex((prevIndex) => (prevIndex % MAX_GRADIENT_COLOURS) + 1);
+    gradient.initGradient("#gradient-canvas");
+  };
 
   const updateHeight = () => {
     if (elementRef.current) {
@@ -22,6 +39,10 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
     };
   }, []);
 
+  useEffect(() => {
+    gradient.initGradient("#gradient-canvas");
+  }, []);
+
   const useTransformY = (value: MotionValue<number>) => {
     return useTransform(value, [0, 1], [0, 0.075], {
       clamp: false,
@@ -36,15 +57,20 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
     <>
       <motion.div
         ref={elementRef}
-        className="fixed w-screen -z-50"
-        style={{ y: useTransformY(props.value) }}
+        className="fixed w-screen -z-50 select-none"
+        style={{ y: useTransformY(scrollValue) }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
         <Suspense fallback={null}>
           <div className="relative">
-            <div className="absolute inset-2 animate-gradient opacity-100"></div>
+            <div className="absolute lg:hidden inset-2 animate-gradient opacity-100"></div>
+            <canvas
+              id="gradient-canvas"
+              data-transition-in
+              className={`absolute hidden lg:block opacity-100 top-1 overflow-hidden lg:inset-y-0.5 gradient-colour-${currentColorIndex}`}
+            ></canvas>
             <div className="relative">
               <div>
                 <Image
@@ -53,6 +79,7 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
                   width={500}
                   height={500}
                   priority={true}
+                  onLoadingComplete={updateHeight}
                   className="w-full"
                 />
               </div>
@@ -61,8 +88,12 @@ export default function MotionHeader(props: { value: MotionValue<number> }) {
         </Suspense>
       </motion.div>
       {/* TOP SPACER */}
-      <div className="bg-[#000] bg-opacity-0" style={topSpacerStyles}></div>
-      <Content height={height} />
+      <div
+        onClick={cycleGradientColor}
+        className="bg-[#000] bg-opacity-0 select-none cursor-pointer"
+        style={topSpacerStyles}
+      ></div>
+      <Content cycleFunc={cycleGradientColor} height={height} />
     </>
   );
 }
