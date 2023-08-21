@@ -3,7 +3,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Content from "@/components/content/Content";
 import { Gradient } from "@/components/shared/Gradient";
-import {isMobile} from "react-device-detect";
+import { isMobile } from "react-device-detect";
 
 const gradient = new Gradient();
 
@@ -42,7 +42,7 @@ export default function MotionHeader({
   useEffect(() => {
     if (!isMobile) {
       gradient.initGradient("#gradient-canvas");
-      console.log("init gradient")
+      console.log("init gradient");
     }
   }, []);
 
@@ -68,12 +68,15 @@ export default function MotionHeader({
       >
         <Suspense fallback={null}>
           <div className="relative">
-            <div className="absolute lg:hidden inset-2 animate-gradient opacity-100"></div>
-            <canvas
-              id="gradient-canvas"
-              data-transition-in
-              className={`absolute hidden lg:block opacity-100 top-1 overflow-hidden lg:inset-y-0.5 gradient-colour-${currentColorIndex}`}
-            ></canvas>
+            {isMobile ? (
+              <div className="absolute inset-2 animate-gradient opacity-100"></div>
+            ) : (
+              <canvas
+                id="gradient-canvas"
+                data-transition-in
+                className={`absolute opacity-100 top-1 overflow-hidden lg:inset-y-0.5 gradient-colour-${currentColorIndex}`}
+              ></canvas>
+            )}
             <div className="relative">
               <div>
                 <Image
