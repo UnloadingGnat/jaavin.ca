@@ -866,7 +866,6 @@ class Gradient {
   initGradient(elementSelector: string): void;
   play(): void;
   pause(): void;
-
 }
 
 export { Gradient };
