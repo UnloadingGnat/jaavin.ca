@@ -1,6 +1,5 @@
 import ExpandingArrow from "@/components/shared/expanding-arrow";
 import Image from "next/image";
-import jaavinPhoto from "@/public/jaavinPhoto.png";
 import jaavinWinter from "@/public/jaavinWinter.png";
 
 export default function About({
