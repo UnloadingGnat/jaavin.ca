@@ -1,6 +1,6 @@
 import ExpandingArrow from "@/components/shared/expanding-arrow";
 import Image from "next/image";
-import jaavinWinter from "@/public/jaavinWinter.png";
+import jaavinPhotoFinal from "@/public/jaavinPhotoFinal.png";
 
 export default function About({
   height,
@@ -19,7 +19,7 @@ export default function About({
         <div className="max-w-full pl-5 lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
             <div className="flex flex-col md:flex-row justify-between">
-              <h2 className="mt-28 text-3xl tracking-normal text-white md:text-5xl">
+              <h2 className="mt-28 text-4xl tracking-normal text-white md:text-5xl">
                 Jaavin
               </h2>
               <p className="mt-0 md:mt-28 text-3xl tracking-normal text-[#54565E] md:text-4xl">
@@ -33,16 +33,17 @@ export default function About({
         <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
           <div className="max-w-full pl-5 lg:px-8">
             <div className="mx-auto max-w-full lg:mx-0">
-              <p className="mt-2 text-2xl tracking-normal text-white lg:text-3xl">
-                I own a computer. Currently based in Canada. Previously lived /
-                worked / studied in Toronto, Oakville, and Hamilton. Likes tech,
-                swimming, volunteering, hiking, coffee, robotics, and rockets.
+              <p className="mt-2 text-3xl tracking-normal text-white lg:text-3xl">
+                I own a computer. Currently based in Canada. Studying computer
+                engineering. Previously lived / worked / studied in Toronto,
+                Oakville, and Hamilton. Likes tech, swimming, volunteering,
+                hiking, coffee, robotics, and rockets.
               </p>
             </div>
           </div>
         </div>
         <Image
-          src={jaavinWinter}
+          src={jaavinPhotoFinal}
           placeholder="blur"
           alt="Photo of Jaavin"
           width={400}
