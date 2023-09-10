@@ -1,6 +1,7 @@
 import ExpandingArrow from "@/components/shared/expanding-arrow";
 import Image from "next/image";
 import jaavinPhoto from "@/public/jaavinPhoto.png";
+import jaavinWinter from "@/public/jaavinWinter.png";
 
 export default function About({
   height,
@@ -36,16 +37,16 @@ export default function About({
               <p className="mt-2 text-2xl tracking-normal text-white lg:text-3xl">
                 I own a computer. Currently based in Canada. Previously lived /
                 worked / studied in Toronto, Oakville, and Hamilton. Likes tech,
-                swimming, volunteering, coffee, robotics, and rockets.
+                swimming, volunteering, hiking, coffee, robotics, and rockets.
               </p>
             </div>
           </div>
         </div>
         <Image
-          src={jaavinPhoto}
+          src={jaavinWinter}
           placeholder="blur"
           alt="Photo of Jaavin"
-          width={650}
+          width={400}
           className="rounded-3xl"
         />
       </div>
