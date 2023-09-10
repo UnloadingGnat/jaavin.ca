@@ -47,7 +47,7 @@ export default function About({
           placeholder="blur"
           alt="Photo of Jaavin"
           width={400}
-          className="rounded-3xl"
+          className="rounded-3xl pointer-events-none select-none"
         />
       </div>
 
