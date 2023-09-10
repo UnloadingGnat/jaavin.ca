@@ -1,6 +1,6 @@
 import ExpandingArrow from "@/components/shared/expanding-arrow";
 import Image from "next/image";
-import jaavinImage from "@/public/jaavinFire.png";
+import jaavinPhoto from "@/public/jaavinPhoto.png";
 
 export default function About({
   height,
@@ -41,7 +41,7 @@ export default function About({
             </div>
           </div>
         </div>
-        <Image src={jaavinImage} alt="jaavin" width={650} className="rounded-3xl" />
+        <Image src={jaavinPhoto} alt="jaavin" width={650} className="rounded-3xl" />
       </div>
 
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
