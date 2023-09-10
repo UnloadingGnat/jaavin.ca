@@ -31,10 +31,10 @@ export default function About({
       </div>
       <div className="flex flex-col md:flex-row gap-2 justify-between">
         <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
-          <div className="max-w-full pl-5 lg:px-8">
+          <div className="max-w-full px-3 lg:px-8">
             <div className="mx-auto max-w-full lg:mx-0">
               <p className="mt-2 text-2xl tracking-normal text-white lg:text-3xl">
-                I own a computer. Currently based in Canada. Studying computer
+                I own a computer. Based in Canada. Studying computer
                 engineering. Previously lived / worked / studied in Toronto,
                 Oakville, and Hamilton. Likes tech, swimming, volunteering,
                 hiking, coffee, robotics, and rockets.
