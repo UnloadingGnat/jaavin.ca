@@ -1,4 +1,6 @@
 import ExpandingArrow from "@/components/shared/expanding-arrow";
+import Image from "next/image";
+import jaavinImage from "@/public/jaavinFire.png";
 
 export default function About({
   height,
@@ -27,21 +29,25 @@ export default function About({
           </div>
         </div>
       </div>
-      <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
-        <div className="max-w-full pl-5 lg:px-8">
-          <div className="mx-auto max-w-full lg:mx-0">
-            <p className="mt-2 text-lg tracking-normal text-white sm:text-3xl">
-              I own a computer. Currently based in Canada. Previously lived /
-              worked / studied in Toronto, Oakville, and Hamilton. Likes tech,
-              swimming, volunteering, coffee, robotics, and rockets.
-            </p>
+      <div className="flex flex-col md:flex-row gap-2 justify-between">
+        <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
+          <div className="max-w-full pl-5 lg:px-8">
+            <div className="mx-auto max-w-full lg:mx-0">
+              <p className="mt-2 text-2xl tracking-normal text-white lg:text-3xl">
+                I own a computer. Currently based in Canada. Previously lived /
+                worked / studied in Toronto, Oakville, and Hamilton. Likes tech,
+                swimming, volunteering, coffee, robotics, and rockets.
+              </p>
+            </div>
           </div>
         </div>
+        <Image src={jaavinImage} alt="jaavin" width={650} className="rounded-3xl" />
       </div>
+
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
         <div className="max-w-full pl-5 lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
-            <p className="mt-24 text-3xl tracking-normal text-white md:text-4xl">
+            <p className="mt-24 text-4xl tracking-normal text-white md:text-4xl">
               Want me to build you something cool?
             </p>
           </div>
