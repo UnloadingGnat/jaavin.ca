@@ -41,7 +41,13 @@ export default function About({
             </div>
           </div>
         </div>
-        <Image src={jaavinPhoto} alt="jaavin" width={650} className="rounded-3xl" />
+        <Image
+          src={jaavinPhoto}
+          placeholder="blur"
+          alt="Photo of Jaavin"
+          width={650}
+          className="rounded-3xl"
+        />
       </div>
 
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
