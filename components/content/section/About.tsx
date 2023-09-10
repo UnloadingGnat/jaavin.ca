@@ -33,7 +33,7 @@ export default function About({
         <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
           <div className="max-w-full pl-5 lg:px-8">
             <div className="mx-auto max-w-full lg:mx-0">
-              <p className="mt-2 text-3xl tracking-normal text-white lg:text-3xl">
+              <p className="mt-2 text-2xl tracking-normal text-white lg:text-3xl">
                 I own a computer. Currently based in Canada. Studying computer
                 engineering. Previously lived / worked / studied in Toronto,
                 Oakville, and Hamilton. Likes tech, swimming, volunteering,
