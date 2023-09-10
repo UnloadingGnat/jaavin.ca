@@ -17,7 +17,7 @@ export default function Hero() {
               engineering problems.
             </p>
             <p className="text-white mt-4 text-xl lg:text-3xl">
-              Currently building performant & high-assurance software at{" "}
+              Previously built performant & high-assurance software at{" "}
               <a
                 href="https://ipexna.com/"
                 className="underline underline-offset-4 cursor-pointer hover:no-underline lg:px-1 hover:bg-white hover:text-[#222329]"
