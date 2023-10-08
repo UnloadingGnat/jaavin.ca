@@ -20,8 +20,8 @@ export default function Content({
       <div className="px-1 lg:px-2">
         <div className="min-h-screen flex flex-col gap-2">
           <Hero />
-          <DynamicTechStack />
           <LogoMarquee />
+          <DynamicTechStack />
           <SelectedWork />
           <About cycleFunc={cycleFunc} height={height} />
         </div>

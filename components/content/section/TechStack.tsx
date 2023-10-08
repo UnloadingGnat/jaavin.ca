@@ -35,49 +35,49 @@ import {
 } from "@icons-pack/react-simple-icons";
 
 const frontendSkills = [
-  { icon: <SiTypescript stroke={2} size={25} />, label: "TypeScript" },
-  { icon: <SiJavascript stroke={2} size={25} />, label: "JavaScript" },
-  { icon: <SiTailwindcss stroke={2} size={25} />, label: "TailwindCSS" },
-  { icon: <SiReact stroke={2} size={25} />, label: "ReactJS" },
-  { icon: <SiNextdotjs stroke={2} size={25} />, label: "NextJS" },
-  { icon: <SiGraphql stroke={2} size={25} />, label: "GraphQL" },
+  { icon: <SiTypescript stroke="2" size={25} />, label: "TypeScript" },
+  { icon: <SiJavascript stroke="2" size={25} />, label: "JavaScript" },
+  { icon: <SiTailwindcss stroke="2" size={25} />, label: "TailwindCSS" },
+  { icon: <SiReact stroke="2" size={25} />, label: "ReactJS" },
+  { icon: <SiNextdotjs stroke="2" size={25} />, label: "NextJS" },
+  { icon: <SiGraphql stroke="2" size={25} />, label: "GraphQL" },
 ];
 
 const backendSkills = [
-  { icon: <SiPython stroke={2} size={25} />, label: "Python" },
-  { icon: <SiOpenjdk stroke={2} size={25} />, label: "Java" },
-  { icon: <SiCsharp stroke={2} size={25} />, label: "C#" },
-  { icon: <SiDjango stroke={2} size={25} />, label: "Django" },
-  { icon: <SiDotnet stroke={2} size={25} />, label: ".NET" },
-  { icon: <SiRust stroke={2} size={25} />, label: "Rust" },
+  { icon: <SiPython stroke="2" size={25} />, label: "Python" },
+  { icon: <SiOpenjdk stroke="2" size={25} />, label: "Java" },
+  { icon: <SiCsharp stroke="2" size={25} />, label: "C#" },
+  { icon: <SiDjango stroke="2" size={25} />, label: "Django" },
+  { icon: <SiDotnet stroke="2" size={25} />, label: ".NET" },
+  { icon: <SiRust stroke="2" size={25} />, label: "Rust" },
 ];
 
 const cloudSkills = [
-  { icon: <SiVercel stroke={2} size={25} />, label: "Vercel" },
-  { icon: <SiMicrosoftazure stroke={2} size={25} />, label: "Azure" },
-  { icon: <SiAmazonaws stroke={2} size={25} />, label: "AWS" },
-  { icon: <SiGooglecloud stroke={2} size={25} />, label: "Google Cloud" },
-  { icon: <SiFirebase stroke={2} size={25} />, label: "Firebase" },
+  { icon: <SiVercel stroke="2" size={25} />, label: "Vercel" },
+  { icon: <SiMicrosoftazure stroke="2" size={25} />, label: "Azure" },
+  { icon: <SiAmazonaws stroke="2" size={25} />, label: "AWS" },
+  { icon: <SiGooglecloud stroke="2" size={25} />, label: "Google Cloud" },
+  { icon: <SiFirebase stroke="2" size={25} />, label: "Firebase" },
 ];
 
 const databaseSkills = [
-  { icon: <SiPostgresql stroke={2} size={25} />, label: "PostgreSQL" },
+  { icon: <SiPostgresql stroke="2" size={25} />, label: "PostgreSQL" },
   {
-    icon: <SiMicrosoftsqlserver stroke={2} size={25} />,
+    icon: <SiMicrosoftsqlserver stroke="2" size={25} />,
     label: "Microsoft SQL",
   },
-  { icon: <SiMongodb stroke={2} size={25} />, label: "MongoDB" },
-  { icon: <SiRedis stroke={2} size={25} />, label: "Redis" },
-  { icon: <SiMysql stroke={2} size={25} />, label: "MySQL" },
-  { icon: <SiPrisma stroke={2} size={25} />, label: "Prisma" },
+  { icon: <SiMongodb stroke="2" size={25} />, label: "MongoDB" },
+  { icon: <SiRedis stroke="2" size={25} />, label: "Redis" },
+  { icon: <SiMysql stroke="2" size={25} />, label: "MySQL" },
+  { icon: <SiPrisma stroke="2" size={25} />, label: "Prisma" },
 ];
 
 const systemSkills = [
-  { icon: <SiSketch stroke={2} size={25} />, label: "Sketch" },
-  { icon: <SiFigma stroke={2} size={25} />, label: "Figma" },
-  { icon: <SiStorybook stroke={2} size={25} />, label: "Storybook" },
-  { icon: <IconBallpen stroke={2} size={25} />, label: "Excalidraw" },
-  { icon: <SiPowerapps stroke={2} size={25} />, label: "Power Apps" },
+  { icon: <SiSketch stroke="2" size={25} />, label: "Sketch" },
+  { icon: <SiFigma stroke="2" size={25} />, label: "Figma" },
+  { icon: <SiStorybook stroke="2" size={25} />, label: "Storybook" },
+  { icon: <IconBallpen stroke="2" size={25} />, label: "Excalidraw" },
+  { icon: <SiPowerapps stroke="2" size={25} />, label: "Power Apps" },
 ];
 
 function SkillCarousel() {
