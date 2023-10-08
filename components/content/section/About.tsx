@@ -19,10 +19,10 @@ export default function About({
         <div className="max-w-full pl-5 lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
             <div className="flex flex-col md:flex-row justify-between">
-              <h2 className="mt-28 text-4xl tracking-normal text-white md:text-5xl">
+              <h2 className="mt-28 text-5xl tracking-normal text-white md:text-6xl">
                 Jaavin
               </h2>
-              <p className="mt-0 md:mt-28 text-3xl tracking-normal text-[#54565E] md:text-4xl">
+              <p className="mt-0 md:mt-28  md:self-end text-3xl tracking-normal text-[#54565E] md:text-4xl">
                 pronounced &apos;jaah—vin&apos;
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function About({
       <div className="bg-[#222329] bg-opacity-80 backdrop-blur-xl py-4 rounded-3xl">
         <div className="max-w-full pl-5 lg:px-8">
           <div className="mx-auto max-w-full lg:mx-0">
-            <p className="mt-24 text-4xl tracking-normal text-white md:text-4xl">
+            <p className="mt-24 text-4xl tracking-normal text-white md:text-5xl">
               Want me to build you something cool?
             </p>
           </div>

@@ -22,6 +22,7 @@ import rocketrySpaceLogo from "@/public/rocketrySpaceLogo.png";
 import rocketBlur from "@/public/rocketBlur.png";
 import spaceportMacRocketIdle from "@/public/spaceportmacrocketidleCompress.png";
 import spaceportMacRocketLaunch from "@/public/spaceportMacRocketLaunchCompress.png";
+import meGptDashboard from "@/public/megptDashboard.png";
 
 interface SelectedWorkProps {
   title: string;
@@ -56,7 +57,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["React", "TypeScript", "Next.js", "Google Cloud", "Tailwind CSS"],
     website: ["https://megpt.xyz", "Website"],
-    images: [megptBanner, megptMock, jaavinMeGPT, createMegppt],
+    images: [megptBanner, megptMock, jaavinMeGPT, meGptDashboard, createMegppt],
   },
   {
     title: "FRC Team 1325",
