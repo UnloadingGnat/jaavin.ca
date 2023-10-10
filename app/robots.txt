@@ -1,4 +1,5 @@
 Sitemap: https://jaavin.ca/sitemap.xml
 
 User-agent: *
+Allow: /
 Disallow: /api
