@@ -9,7 +9,7 @@ import ipexMock from "@/public/ipexmock.png";
 import megptBanner from "@/public/megptBanner.png";
 import megptMock from "@/public/megptmock.png";
 import createMegppt from "@/public/createmegpt.png";
-import jaavinMeGPT from "@/public/jaavinMeGPT.png";
+import jaavinMeGPTFinal from "@/public/jaavinMeGPTFinal.png";
 import province1325 from "@/public/1325Province.png";
 import cad1325 from "@/public/cad1325.png";
 import banner1325 from "@/public/banner1325.png";
@@ -57,7 +57,7 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["React", "TypeScript", "Next.js", "Google Cloud", "Tailwind CSS"],
     website: ["https://megpt.xyz", "Website"],
-    images: [megptBanner, megptMock, jaavinMeGPT, meGptDashboard, createMegppt],
+    images: [megptBanner, megptMock, jaavinMeGPTFinal, meGptDashboard, createMegppt],
   },
   {
     title: "FRC Team 1325",
