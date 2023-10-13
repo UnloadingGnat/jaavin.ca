@@ -1,4 +1,4 @@
-<img alt="Performance" src="/readmeImage.png">
+<img alt="Jaavin Website Image" src="/readmeImage.png">
 
 ---
 
