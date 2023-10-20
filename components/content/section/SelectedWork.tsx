@@ -57,7 +57,13 @@ const selectedWork: SelectedWorkProps[] = [
     ],
     skills: ["React", "TypeScript", "Next.js", "Google Cloud", "Tailwind CSS"],
     website: ["https://megpt.xyz", "Website"],
-    images: [megptBanner, megptMock, jaavinMeGPTFinal, meGptDashboard, createMegppt],
+    images: [
+      megptBanner,
+      megptMock,
+      jaavinMeGPTFinal,
+      meGptDashboard,
+      createMegppt,
+    ],
   },
   {
     title: "FRC Team 1325",
