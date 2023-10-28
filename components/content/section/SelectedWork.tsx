@@ -53,7 +53,7 @@ const selectedWork: SelectedWorkProps[] = [
     position: null,
     date: "July 2023—",
     info: [
-      "MeGPT enables creators, brands, artists, publishers, agencies, and businesses of all sizes to create an AI clone of themselves, in one simple link making them more interactive and discoverable online.",
+      'MeGPT is a tool to create an AI clone of yourself, in one simple link – making "you" more interactive and discoverable online.',
       "Reached 518 users and over 2.2K visitors within the first 24 hours of launch.",
     ],
     skills: ["React", "TypeScript", "Next.js", "Google Cloud", "Tailwind CSS"],
