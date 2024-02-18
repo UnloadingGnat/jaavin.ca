@@ -23,6 +23,7 @@ import rocketBlur from "@/public/rocketBlur.png";
 import spaceportMacRocketIdle from "@/public/spaceportmacrocketidleCompress.png";
 import spaceportMacRocketLaunch from "@/public/spaceportMacRocketLaunchCompress.png";
 import meGptDashboard from "@/public/megptDashboard.png";
+import top2MegptJaavin from "@/public/top2MegptJaavin.jpeg";
 
 interface SelectedWorkProps {
   title: string;
@@ -61,6 +62,7 @@ const selectedWork: SelectedWorkProps[] = [
     images: [
       megptBanner,
       megptMock,
+      top2MegptJaavin,
       jaavinMeGPTFinal,
       meGptDashboard,
       createMegppt,
