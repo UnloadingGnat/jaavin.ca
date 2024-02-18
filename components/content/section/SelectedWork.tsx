@@ -56,6 +56,7 @@ const selectedWork: SelectedWorkProps[] = [
     info: [
       'MeGPT is a tool to create an AI clone of yourself, in one simple link – making "you" more interactive and discoverable online.',
       "Reached 518 users and over 2.2K visitors within the first 24 hours of launch.",
+      "Featured on McMaster University's Faculty of Engineering News, highlighting impact in personal and business applications."
     ],
     skills: ["React", "TypeScript", "Next.js", "Google Cloud", "Tailwind CSS"],
     website: ["https://megpt.xyz", "Website"],
