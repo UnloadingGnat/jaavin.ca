@@ -16,16 +16,16 @@ export default function Hero() {
               intuitive interfaces. Driven by the desire to solve complex
               engineering problems.
             </p>
-            <p className="text-white mt-4 text-xl lg:text-3xl">
-              Previously built performant & high-assurance software at{" "}
-              <a
-                href="https://ipexna.com/"
-                className="underline underline-offset-4 cursor-pointer hover:no-underline lg:px-1 hover:bg-white hover:text-[#222329]"
-              >
-                IPEX
-              </a>
-              .
-            </p>
+            {/*<p className="text-white mt-4 text-xl lg:text-3xl">*/}
+            {/*  Previously built performant & high-assurance software at{" "}*/}
+            {/*  <a*/}
+            {/*    href="https://ipexna.com/"*/}
+            {/*    className="underline underline-offset-4 cursor-pointer hover:no-underline lg:px-1 hover:bg-white hover:text-[#222329]"*/}
+            {/*  >*/}
+            {/*    IPEX*/}
+            {/*  </a>*/}
+            {/*  .*/}
+            {/*</p>*/}
           </div>
         </div>
       </div>
