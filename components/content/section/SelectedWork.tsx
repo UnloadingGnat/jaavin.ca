@@ -35,11 +35,21 @@ const selectedWork: SelectedWorkProps[] = [
   {
     title: "IPEX",
     position: "Software Developer Intern",
-    date: "May 2023—August 2023, May 2024—August 2024",
+    date: "May 2024—August 2024",
     info: [
       "Developed a real-time factory alert system in C# using .NET, enabling audible warnings for critical machine failures, reducing incident response time by 30% and minimizing production line downtime.",
       "Deployed a network configuration server for IPEX’s corporate office, supporting 200+ users by automating IP allocation.",
       "Enhanced and maintained legacy systems from my first term, optimizing performance in the file transfer service and reducing error rates in the API Gateway.",
+    ],
+    skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
+    website: ["https://ipexna.com", "Website"],
+    images: [],
+  },
+  {
+    title: "IPEX",
+    position: "Software Developer Intern",
+    date: "May 2023—August 2023",
+    info: [
       "Implemented file transfer service in C# using .NET for business-critical process reducing downtime from 14% to 2%.",
       "Reduced missed promises on API Gateway improving accuracy of item-vendor mapping by 183 basis points on ASP.NET.",
       "Planned migration of a real-time application from Microsoft SQL server to MongoDB for key business service.",
@@ -175,60 +185,67 @@ export default function SelectedWork() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row gap-2 justify-between">
-            <a
-              href={work.website[0]}
-              className="bg-[#3A416D] hover:bg-[#4D5691] transition-all ease-in-out bg-opacity-80 basis-1/4 group backdrop-blur-xl py-4 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 min-h-[65px] flex flex-col justify-between"
-            >
-              <div className="flex flex-row gap-3">
-                <h3 className="text-xl ml-2 lg:text-xl xl:text-2xl text-gray-300">
-                  {work.website[1]}
-                </h3>
-                <ExpandingArrow className="mt-1 -ml-2 h-5 w-5 text-gray-300" />
-              </div>
-            </a>
-            <div className="bg-[#222329] hidden lg:block bg-opacity-80 basis-1/2 backdrop-blur-xl py-4 rounded-2xl sm:mt-0 w-full pr-5 pl-5 lg:pr-3">
-              <div className="text-lg text-[#999] flex flex-col gap-1"></div>
-            </div>
-            <div className="bg-[#222329] hidden lg:block bg-opacity-80 basis-1/4 backdrop-blur-xl py-2 rounded-full sm:mt-0 w-full px-5">
-              <div className="flex flex-row gap-3 justify-between  w-full">
-                <button
-                  aria-label="scroll-gallery-left"
-                  onClick={() => scrollLeft(index)}
-                  className="bg-[#393A41] hover:bg-[#4C4D56] transition-all ease-in-out bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-start items-center"
-                >
-                  <ExpandingArrow className="-ml-2 h-5 w-5 text-gray-300 rotate-180" />
-                </button>
-                <button
-                  aria-label="scroll-gallery-right"
-                  onClick={() => scrollRight(index)}
-                  className="bg-[#393A41] hover:bg-[#4C4D56] transition-all ease-in-out bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-end items-center"
-                >
-                  <ExpandingArrow className="-ml-8 h-5 w-5 text-gray-300" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            ref={(el) => {
-              galleryRef.current[index] = el as HTMLDivElement;
-            }}
-            className=" mt-1 flex flex-row w-full gap-5 px-10 pl-2 overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-hide"
-          >
-            {work.images.map((image, index) => (
-              <div
-                key={index}
-                className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
+          {
+            work.images.length > 0 && (
+
+            <div className="flex flex-col lg:flex-row gap-2 justify-between">
+              <a
+                href={work.website[0]}
+                className="bg-[#3A416D] hover:bg-[#4D5691] transition-all ease-in-out bg-opacity-80 basis-1/4 group backdrop-blur-xl py-4 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 min-h-[65px] flex flex-col justify-between"
               >
-                <Image
-                  src={image}
-                  placeholder="blur"
-                  alt="Image related to selected work"
-                  className="h-full w-full rounded-xl object-cover"
-                />
+                <div className="flex flex-row gap-3">
+                  <h3 className="text-xl ml-2 lg:text-xl xl:text-2xl text-gray-300">
+                    {work.website[1]}
+                  </h3>
+                  <ExpandingArrow className="mt-1 -ml-2 h-5 w-5 text-gray-300" />
+                </div>
+              </a>
+              <div className="bg-[#222329] hidden lg:block bg-opacity-80 basis-1/2 backdrop-blur-xl py-4 rounded-2xl sm:mt-0 w-full pr-5 pl-5 lg:pr-3">
+                <div className="text-lg text-[#999] flex flex-col gap-1"></div>
               </div>
-            ))}
-          </div>
+              <div className="bg-[#222329] hidden lg:block bg-opacity-80 basis-1/4 backdrop-blur-xl py-2 rounded-full sm:mt-0 w-full px-5">
+                <div className="flex flex-row gap-3 justify-between  w-full">
+                  <button
+                    aria-label="scroll-gallery-left"
+                    onClick={() => scrollLeft(index)}
+                    className="bg-[#393A41] hover:bg-[#4C4D56] transition-all ease-in-out bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-start items-center"
+                  >
+                    <ExpandingArrow className="-ml-2 h-5 w-5 text-gray-300 rotate-180" />
+                  </button>
+                  <button
+                    aria-label="scroll-gallery-right"
+                    onClick={() => scrollRight(index)}
+                    className="bg-[#393A41] hover:bg-[#4C4D56] transition-all ease-in-out bg-opacity-80 basis-1/4 group backdrop-blur-xl py-6 rounded-full sm:mt-0 w-full pl-5 lg:mx-0 flex flex-row justify-end items-center"
+                  >
+                    <ExpandingArrow className="-ml-8 h-5 w-5 text-gray-300" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            )
+          }
+          {work.images.length > 0 && (
+            <div
+              ref={(el) => {
+                galleryRef.current[index] = el as HTMLDivElement;
+              }}
+              className=" mt-1 flex flex-row w-full gap-5 px-10 pl-2 overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-hide"
+            >
+              {work.images.map((image, index) => (
+                <div
+                  key={index}
+                  className="aspect-[16/9] w-[90%] shrink-0 pointer-events-none select-none snap-start snap-always rounded-xl bg-white sm:w-[44%] md:w-[30%]"
+                >
+                  <Image
+                    src={image}
+                    placeholder="blur"
+                    alt="Image related to selected work"
+                    className="h-full w-full rounded-xl object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       ))}
     </>
