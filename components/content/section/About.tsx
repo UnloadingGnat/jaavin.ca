@@ -33,7 +33,7 @@ export default function About({
             <p className="mt-2 text-2xl tracking-normal text-white lg:text-3xl">
               I own a computer. Based in Canada. Studying computer engineering.
               Previously lived / worked / studied in Toronto, Oakville, and
-              Hamilton. Likes tech, swimming, volunteering, coffee, robotics,
+              Hamilton. Likes tech, swimming, climbing, volunteering, coffee, robotics,
               and rockets.
             </p>
           </div>

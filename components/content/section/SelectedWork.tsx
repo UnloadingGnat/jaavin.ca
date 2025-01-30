@@ -14,10 +14,6 @@ import province1325 from "@/public/1325Province.png";
 import cad1325 from "@/public/cad1325.png";
 import banner1325 from "@/public/banner1325.png";
 import blurRobot1325comp2020 from "@/public/robot1325comp2020blur.png";
-import tweetCopilotLaptop from "@/public/tweetcopilotlaptopCompress.png";
-import iphoneTweet from "@/public/iphonetweet.png";
-import functionalDesign from "@/public/functionalDesign.png";
-import highLevelTweet from "@/public/highleveltweet.png";
 import rocketrySpaceLogo from "@/public/rocketrySpaceLogo.png";
 import rocketBlur from "@/public/rocketBlur.png";
 import spaceportMacRocketIdle from "@/public/spaceportmacrocketidleCompress.png";
@@ -39,8 +35,11 @@ const selectedWork: SelectedWorkProps[] = [
   {
     title: "IPEX",
     position: "Software Developer Intern",
-    date: "May 2023—August 2023",
+    date: "May 2023—August 2023, May 2024—August 2024",
     info: [
+      "Developed a real-time factory alert system in C# using .NET, enabling audible warnings for critical machine failures, reducing incident response time by 30% and minimizing production line downtime.",
+      "Deployed a network configuration server for IPEX’s corporate office, supporting 200+ users by automating IP allocation.",
+      "Enhanced and maintained legacy systems from my first term, optimizing performance in the file transfer service and reducing error rates in the API Gateway.",
       "Implemented file transfer service in C# using .NET for business-critical process reducing downtime from 14% to 2%.",
       "Reduced missed promises on API Gateway improving accuracy of item-vendor mapping by 183 basis points on ASP.NET.",
       "Planned migration of a real-time application from Microsoft SQL server to MongoDB for key business service.",
@@ -58,7 +57,7 @@ const selectedWork: SelectedWorkProps[] = [
       "Reached 518 users and over 2.2K visitors within the first 24 hours of launch.",
       "Featured on McMaster University's Faculty of Engineering News, highlighting impact in personal and business applications."
     ],
-    skills: ["React", "TypeScript", "Next.js", "Google Cloud", "Tailwind CSS"],
+    skills: ["React", "TypeScript", "Next.js", "Google Cloud"],
     website: ["https://megpt.xyz", "Website"],
     images: [
       megptBanner,
@@ -83,20 +82,9 @@ const selectedWork: SelectedWorkProps[] = [
     images: [province1325, banner1325, blurRobot1325comp2020, cad1325],
   },
   {
-    title: "Tweet Copilot",
-    position: null,
-    date: "April 2023—May 2023",
-    info: [
-      "A social media platform that uses ChatGPT to keep your messages within the 280-character limit.",
-    ],
-    skills: ["React", "TypeScript", "Next.js", "MySQL", "Tailwind CSS"],
-    website: ["https://github.com/UnloadingGnat/tweetcopilot", "Github"],
-    images: [tweetCopilotLaptop, iphoneTweet, highLevelTweet, functionalDesign],
-  },
-  {
     title: "McMaster Rocketry",
     position: "Assistant Project Manager",
-    date: "November 2022—",
+    date: "November 2022—December 2023",
     info: [
       "Coordinated between the software controls sub-team of 15 members and the project manager to drive successful rocket launch at Spaceport America in New Mexico.",
       "Orchestrated the team's timelines, coordinating tasks among a rocketry team of over 70 highly skilled members.",
@@ -136,7 +124,7 @@ export default function SelectedWork() {
               Selected Work
             </h2>
             <p className="mt-16 text-2xl tracking-tight text-[#757575] md:text-3xl">
-              2021—2023
+              2021—2025
             </p>
           </div>
         </div>
