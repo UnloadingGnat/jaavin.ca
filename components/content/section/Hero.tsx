@@ -9,7 +9,7 @@ export default function Hero() {
               I&apos;m Jaavin.
             </h2>
             <h3 className="text-xl lg:text-3xl tracking-normal text-white sm:text-4xl">
-              Full Stack Developer.
+              Computer Engineering Student.
             </h3>
             <p className="mt-2 text-lg  tracking-tight text-[#999] sm:text-3xl">
               I am a multi-disciplinary software developer who enjoys crafting
