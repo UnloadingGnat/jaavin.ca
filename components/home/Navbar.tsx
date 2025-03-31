@@ -24,7 +24,7 @@ export default function Navbar(props: { footer?: boolean }) {
             </h2>
           ) : (
             <h2 className="text-xl text-[#757575] font-mono tracking-tight pt-2 mb-2 ml-12 hidden lg:flex">
-              Software Developer
+              McMaster University
             </h2>
           )}
         </div>

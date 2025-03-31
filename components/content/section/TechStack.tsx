@@ -32,6 +32,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVercel,
+  SiArm, SiC, SiCplusplus, SiIntel, SiLtspice, SiLtspiceHex, SiAltiumdesigner
 } from "@icons-pack/react-simple-icons";
 
 const frontendSkills = [
@@ -73,16 +74,18 @@ const databaseSkills = [
 ];
 
 const systemSkills = [
-  { icon: <SiSketch stroke="2" size={25} />, label: "Sketch" },
-  { icon: <SiFigma stroke="2" size={25} />, label: "Figma" },
-  { icon: <SiStorybook stroke="2" size={25} />, label: "Storybook" },
-  { icon: <IconBallpen stroke="2" size={25} />, label: "Excalidraw" },
-  { icon: <SiPowerapps stroke="2" size={25} />, label: "Power Apps" },
+  { icon: <SiArm stroke="2" size={25} />, label: "ARM-Assembly" },
+  { icon: <SiC stroke="2" size={25} />, label: "C" },
+  { icon: <SiCplusplus stroke="2" size={25} />, label: "C++" },
+  { icon: <SiIntel stroke="2" size={25} />, label: "Verilog" },
+  { icon: <SiLtspice stroke="2" size={25} />, label: "PSpice" },
+  { icon: <SiAltiumdesigner stroke="2" size={25} />, label: "Altium" },
+
 ];
 
 function SkillCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
-  const [activeTab, setActiveTab] = useState<string>("frontend");
+  const [activeTab, setActiveTab] = useState<string>("system");
 
   const scrollLeft = () => {
     if (carouselRef.current) {
@@ -112,7 +115,7 @@ function SkillCarousel() {
     } else if (activeTab === "system") {
       return systemSkills;
     } else {
-      return frontendSkills;
+      return systemSkills;
     }
   };
 
@@ -131,8 +134,19 @@ function SkillCarousel() {
           className="flex overflow-x-scroll scrollbar-hide snap-x snap-mandatory scroll-smooth border-x-2 mt-2 border-opacity-60 border-gray-700 lg:border-hidden "
         >
           <button
-            onClick={() => handleTabChange("frontend")}
+            onClick={() => handleTabChange("system")}
             className={`mt-2 text-lg snap-start snap-always whitespace-nowrap pl-2 lg:pl-0 hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
+              activeTab === "system" ? "text-white hover:no-underline" : ""
+            }`}
+          >
+            Engineering
+          </button>
+          <p className="mt-2 text-lg ml-2 tracking-tight text-[#999] sm:text-3xl">
+          /
+          </p>
+          <button
+            onClick={() => handleTabChange("frontend")}
+            className={`mt-2 text-lg snap-start snap-always whitespace-nowrap pl-2 hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
               activeTab === "frontend" ? "text-white hover:no-underline" : ""
             }`}
           >
@@ -170,17 +184,6 @@ function SkillCarousel() {
             }`}
           >
             Database
-          </button>
-          <p className="mt-2 text-lg mx-2 tracking-tight text-[#999] sm:text-3xl">
-            /
-          </p>
-          <button
-            onClick={() => handleTabChange("system")}
-            className={`mt-2 text-lg snap-start snap-always whitespace-nowrap hover:underline underline-offset-1 tracking-tight text-[#999] sm:text-3xl ${
-              activeTab === "system" ? "text-white hover:no-underline" : ""
-            }`}
-          >
-            System Design
           </button>
         </div>
         <button
