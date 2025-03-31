@@ -12,8 +12,7 @@ export default function Hero() {
               Computer Engineering Student.
             </h3>
             <p className="mt-2 text-lg  tracking-tight text-[#999] sm:text-3xl">
-              I am a multi-disciplinary software developer who enjoys crafting
-              intuitive interfaces. Driven by the desire to solve complex
+              I&apos;m a multi-disciplinary engineering student with a passion for life-long learning. Driven by the desire to solve complex
               engineering problems.
             </p>
             {/*<p className="text-white mt-4 text-xl lg:text-3xl">*/}
