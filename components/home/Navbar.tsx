@@ -10,7 +10,7 @@ export default function Navbar(props: { footer?: boolean }) {
       <div className="flex justify-between gap-6">
         <div className="flex justify-between gap-10">
           <h2 className="text-xl font-mono tracking-tight text-[#969696] pt-2 mb-2 ml-4">
-            Jaavin Mohanakumar
+            Jaavin Mohan
           </h2>
           {props.footer ? (
             <h2 className="text-xl text-[#757575] font-mono tracking-tight pt-2 mb-2 ml-12 hidden lg:flex">
