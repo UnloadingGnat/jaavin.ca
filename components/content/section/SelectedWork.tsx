@@ -41,7 +41,7 @@ const selectedWork: SelectedWorkProps[] = [
       "Deployed a network configuration server for IPEX’s corporate office, supporting 200+ users by automating IP allocation.",
       "Enhanced and maintained legacy systems from my first term, optimizing performance in the file transfer service and reducing error rates in the API Gateway.",
     ],
-    skills: ["C#", ".NET", "Azure", "Microsoft SQL", "MongoDB"],
+    skills: ["C#", ".NET", "Azure", "Network Config"],
     website: ["https://ipexna.com", "Website"],
     images: [],
   },
