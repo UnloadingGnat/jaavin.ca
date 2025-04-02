@@ -99,7 +99,7 @@ const selectedWork: SelectedWorkProps[] = [
       "Coordinated between the software controls sub-team of 15 members and the project manager to drive successful rocket launch at Spaceport America in New Mexico.",
       "Orchestrated the team's timelines, coordinating tasks among a rocketry team of over 70 highly skilled members.",
     ],
-    skills: ["Rust", "React", "TypeScript", "MongoDB"],
+    skills: ["Management", "Leadership", "React", "MongoDB"],
     website: ["https://www.macrocketry.ca/", "Website"],
     images: [
       rocketrySpaceLogo,
