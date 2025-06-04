@@ -14,16 +14,6 @@ export default function Hero() {
             <p className="mt-2 text-lg  tracking-tight text-[#999] sm:text-3xl">
               I&apos;m an engineer specialized in computer architecture and applied AI, with a passion for life-long learning.
             </p>
-            {/*<p className="text-white mt-4 text-xl lg:text-3xl">*/}
-            {/*  Previously built performant & high-assurance software at{" "}*/}
-            {/*  <a*/}
-            {/*    href="https://ipexna.com/"*/}
-            {/*    className="underline underline-offset-4 cursor-pointer hover:no-underline lg:px-1 hover:bg-white hover:text-[#222329]"*/}
-            {/*  >*/}
-            {/*    IPEX*/}
-            {/*  </a>*/}
-            {/*  .*/}
-            {/*</p>*/}
           </div>
         </div>
       </div>
