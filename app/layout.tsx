@@ -5,12 +5,12 @@ import { Analytics } from "@vercel/analytics/react";
 export const metadata = {
   title: "Jaavin - Computer Engineer",
   description:
-    "I'm a multi-disciplinary engineering student with a passion for life-long learning. Driven by the desire to solve complex engineering problems.",
+    "I'm an engineer specialized in computer architecture and applied AI, with a passion for life-long learning.",
   twitter: {
     card: "summary_large_image",
     title: "Jaavin - Computer Engineer",
     description:
-      "I'm a multi-disciplinary engineering student with a passion for life-long learning. Driven by the desire to solve complex engineering problems.",
+      "I'm an engineer specialized in computer architecture and applied AI, with a passion for life-long learning.",
   },
   metadataBase: new URL("https://jaavin.ca"),
   themeColor: "#FFF",
